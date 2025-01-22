@@ -52,7 +52,7 @@ p {
     color: #388E3C;
 }
 
-.styled-img {
+#styled-img {
     border: 3px solid #004d80;
     padding: 5px;
     border-radius: 10px;
