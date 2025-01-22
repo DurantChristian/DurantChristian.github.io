@@ -48,7 +48,7 @@ body {
 #assignments-list {
     list-style:none;
     padding:0;
-    text-align:center;
+    text-align:justify;
 }
 
 #assignments-list li {
