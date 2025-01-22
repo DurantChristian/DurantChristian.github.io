@@ -1,0 +1,56 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:#a9a9ff
+}
+
+#content-container {
+    max-width:900px;
+    margin:40px auto;
+    padding:20px;
+    background-color:white;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#main-heading {
+    color: #004d80;
+    text-align:center;
+    font-size:32px;
+    font-weight:600;
+}
+
+#author-name {
+    color:#0080ff;
+    text-align:center;
+    font-size:22px;
+    font-weight:400;
+}
+
+#assignments-heading {
+    font-size:26px;
+    color:#004d80;
+    margin-top:30px;
+    font-weight:600;
+}
+
+.assignment-link {
+    display: inline-block;
+    text-decoration:none;
+    color:white;
+    background-color:#004d80;
+    padding:12px 20px;
+    border-radius:5px;
+    font-weight:500;
+}
+
+#assignments-list li {
+    margin:15px 0;
+}
+
+p {
+    color:#555;
+}
+
+.assignment-link:hover {
+    color:#0080ff;
+}
