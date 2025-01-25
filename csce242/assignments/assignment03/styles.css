@@ -9,28 +9,24 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            text-align: center;
         }
         header {
-            width: 100px;
-            margin: auto;
+            width: 100%;
             text-align: center;
             font-size: 24px;
             padding: 10px 0;
             background-color: #ddd;
         }
-        nav {
-            width: 100%;
-            background-color: #333;
-        }
         nav ul {
-            display: flex;
-            justify-content: center;
             list-style: none;
             padding: 10px;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
         }
         nav ul li {
             margin: 0 15px;
-            list-style-type: none;
         }
         nav ul li a {
             color: white;
@@ -39,7 +35,7 @@
         }
         main {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             justify-content: space-between;
             width: 90%;
             margin-top: 20px;
@@ -60,13 +56,17 @@
             color: white;
             margin-top: 10px;
             display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         article img {
-            display: block;
-            margin: 10px auto;
+            width: 200px;
+            height: 50px;
+            margin-bottom: 10px;
         }
         .titles {
             display: flex;
+            flex-direction: column;
             margin-top: 20px;
         }
         .title-box {
@@ -74,6 +74,13 @@
             padding: 20px;
             margin: 10px 0;
             display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .title-box img {
+            width: 200px;
+            height: 50px;
+            margin-bottom: 10px;
         }
         @media (min-width: 768px) {
             main {
@@ -87,7 +94,6 @@
                 flex: 1;
                 text-align: center;
             }
-            /* Ideas Section - Horizontal Layout */
             .content article {
                 display: flex;
                 flex-direction: row;
@@ -95,25 +101,22 @@
                 justify-content: space-between;
                 text-align: left;
             }
-            /* Alternate Image Position for Ideas */
             .content article:nth-child(odd) img {
-                order: 2;  /* Moves image to the right */
+                order: 2;
                 margin-left: 15px;
             }
             .content article:nth-child(even) img {
-                order: -1; /* Moves image to the left */
+                order: -1;
                 margin-right: 15px;
             }
-            /* Titles Layout: 6 Boxes on the Right Side */
             .titles-container {
                 display: flex;
                 flex-direction: column;
-                width: 30%; /* Takes 30% of space on the right */
+                width: 30%;
             }
             .title-box {
                 width: 100%;
             }
-            /* Parent flexbox for Links + Titles */
             .links-titles-wrapper {
                 display: flex;
                 justify-content: space-between;
@@ -121,6 +124,6 @@
             }
             aside {
                 flex: 1;
-                max-width: 40%; /* Center links */
+                max-width: 40%;
             }
         }
