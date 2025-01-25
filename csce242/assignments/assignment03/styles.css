@@ -59,33 +59,68 @@
             padding: 20px;
             color: white;
             margin-top: 10px;
+            display: flex;
         }
         article img {
             display: block;
             margin: 10px auto;
         }
+        .titles {
+            display: flex;
+            margin-top: 20px;
+        }
+        .title-box {
+            background-color: #ffcc66;
+            padding: 20px;
+            margin: 10px 0;
+            display: flex;
+        }
         @media (min-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
             main {
-                flex-direction: column;
-                align-items: center;
+                display: flex;
+                flex-direction: row;
             }
             .content {
                 flex: 2;
             }
             aside {
-                width: 100%;
+                flex: 1;
                 text-align: center;
             }
-            .img-right {
-                float: right;
+            /* Ideas Section - Horizontal Layout */
+            .content article {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                text-align: left;
+            }
+            /* Alternate Image Position for Ideas */
+            .content article:nth-child(odd) img {
+                order: 2;  /* Moves image to the right */
                 margin-left: 15px;
             }
-            .img-left {
-                float: left;
+            .content article:nth-child(even) img {
+                order: -1; /* Moves image to the left */
                 margin-right: 15px;
+            }
+            /* Titles Layout: 6 Boxes on the Right Side */
+            .titles-container {
+                display: flex;
+                flex-direction: column;
+                width: 30%; /* Takes 30% of space on the right */
+            }
+            .title-box {
+                width: 100%;
+            }
+            /* Parent flexbox for Links + Titles */
+            .links-titles-wrapper {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+            aside {
+                flex: 1;
+                max-width: 40%; /* Center links */
             }
         }
