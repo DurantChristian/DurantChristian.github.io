@@ -14,9 +14,8 @@
         header {
             width: 100%;
             text-align: center;
-            font-size: 24px;
+            font-size: 12px;
             padding: 10px 0;
-            background-color: #ddd;
         }
         nav ul {
             list-style: none;
@@ -59,11 +58,6 @@
             flex-direction: column;
             align-items: center;
         }
-        article img {
-            width: 200px;
-            height: 50px;
-            margin-bottom: 10px;
-        }
         .titles {
             display: flex;
             flex-direction: column;
@@ -100,14 +94,6 @@
                 align-items: center;
                 justify-content: space-between;
                 text-align: left;
-            }
-            .content article:nth-child(odd) img {
-                order: 2;
-                margin-left: 15px;
-            }
-            .content article:nth-child(even) img {
-                order: -1;
-                margin-right: 15px;
             }
             .titles-container {
                 display: flex;
