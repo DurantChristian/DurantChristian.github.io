@@ -7,6 +7,7 @@
         body {
             background-color: #f8f5d7;
             display: flex;
+            flex-direction: column;
             align-items: center;
             text-align: center;
         }
@@ -59,6 +60,7 @@
         }
         .titles {
             display: flex;
+            flex-direction: column;
             margin-top: 20px;
         }
         .title-box {
@@ -66,6 +68,7 @@
             padding: 20px;
             margin: 10px 0;
             display: flex;
+            flex-direction: column;
             align-items: center;
         }
         .title-box img {
@@ -76,6 +79,7 @@
         @media (min-width: 768px) {
             main {
                 display: flex;
+                flex-direction: row;
             }
             .content {
                 flex: 2;
@@ -84,17 +88,24 @@
                 flex: 1;
                 text-align: center;
             }
-            .content article {
-                display: flex;
-                align-items: center;
-                text-align: left;
+            .content article:nth-child(odd) img {
+                order: 2;
+                margin-left: 15px;
+            }
+            .content article:nth-child(even) img {
+                order: -1;
+                margin-right: 15px;
             }
             .titles-container {
                 display: flex;
+                flex-direction: column;
+                width: 30%;
+            }
+            .title-box {
+                width: 100%;
             }
             .links-titles-wrapper {
                 display: flex;
-                justify-content: space-between;
             }
             aside {
                 flex: 1;
