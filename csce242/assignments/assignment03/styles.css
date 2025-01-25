@@ -7,7 +7,6 @@
         body {
             background-color: #f8f5d7;
             display: flex;
-            flex-direction: column;
             align-items: center;
             text-align: center;
         }
@@ -60,7 +59,6 @@
         }
         .titles {
             display: flex;
-            flex-direction: column;
             margin-top: 20px;
         }
         .title-box {
@@ -68,7 +66,6 @@
             padding: 20px;
             margin: 10px 0;
             display: flex;
-            flex-direction: column;
             align-items: center;
         }
         .title-box img {
@@ -79,7 +76,6 @@
         @media (min-width: 768px) {
             main {
                 display: flex;
-                flex-direction: row;
             }
             .content {
                 flex: 2;
@@ -90,26 +86,17 @@
             }
             .content article {
                 display: flex;
-                flex-direction: row;
                 align-items: center;
-                justify-content: space-between;
                 text-align: left;
             }
             .titles-container {
                 display: flex;
-                flex-direction: column;
-                width: 30%;
-            }
-            .title-box {
-                width: 100%;
             }
             .links-titles-wrapper {
                 display: flex;
                 justify-content: space-between;
-                width: 100%;
             }
             aside {
                 flex: 1;
-                max-width: 40%;
             }
         }
