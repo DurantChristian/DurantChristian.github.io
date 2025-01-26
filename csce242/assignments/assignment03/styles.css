@@ -52,6 +52,7 @@
         aside {
             background-color: #f08080;
             padding: 20px;
+            width:100%;
         }
         aside ul {
             list-style:none;
@@ -66,10 +67,6 @@
             color: white;
             margin-top: 10px;
             display: flex;
-        }
-        .article-content {
-            display:flex;
-            flex-direction:column;
         }
         article img {
             display: block;
