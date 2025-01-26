@@ -95,8 +95,8 @@
         .title-box {
             background-color: #ffcc66;
             padding: 20px;
-            margin: 10px 0;
             text-align:center;
+            width:100%;
         }
         .title-box img {
             width:200px;
