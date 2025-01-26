@@ -23,18 +23,13 @@
         nav ul {
             display: column;
             justify-content: center;
-            list-style: none;
-            text-decoration:none;
             padding: 10px;
         }
         nav ul li {
             margin: 0 15px;
-            list-style: none;
-            text-decoration:none;
         }
         nav ul li a {
             color: white;
-            text-decoration: none;
             font-size: 18px;
         }
         main {
@@ -52,6 +47,13 @@
             background-color: #f08080;
             padding: 20px;
         }
+        aside ul {
+            list-style:none;
+            padding:0;
+        }
+        aside ul li {
+            margin:5px 0;
+        }
         article {
             background-color: #5a7d95;
             padding: 20px;
@@ -63,24 +65,52 @@
             display: block;
             margin: 10px auto;
         }
+        .image-right {
+            float:right;
+            margin-left:10px;
+        }
+        .image-left {
+            float:left;
+            margin-right:10px;
+        }
+        .links-titles-wrapper {
+            display:flex;
+            width:100%;
+        }
+        .left-titles-container {
+            width:20%;
+        }
+        .right-titles-container {
+            width:30%;
+        }
         .titles {
             display: flex;
-            margin-top: 20px;
+            flex-direction:column;
+            align-items:center;
         }
         .title-box {
             background-color: #ffcc66;
             padding: 20px;
             margin: 10px 0;
-            display: flex;
+            text-align:center;
+        }
+        .title-box img {
+            width:200px;
+            height:50px;
+            display:block;
+            margin:auto;
         }
         @media (min-width: 768px) {
-            nav ul {
-                display: flex;
-                list-style:none;
-                text-decoration:none;
-            }
             main {
                 display: flex;
-           
+            }
+            .content {
+                flex:2;
+            }
+            aside {
+                flex:1;
+            }
+            .links-titles-wrapper {
+                display:flex;
             }
         }
