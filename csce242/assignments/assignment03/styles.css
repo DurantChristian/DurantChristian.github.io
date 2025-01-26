@@ -67,6 +67,10 @@
             margin-top: 10px;
             display: flex;
         }
+        .article-content {
+            display:flex;
+            flex-direction:column;
+        }
         article img {
             display: block;
             margin: 10px auto;
