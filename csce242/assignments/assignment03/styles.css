@@ -23,10 +23,14 @@
         nav ul {
             display: column;
             justify-content: center;
+            list-style: none;
+            text-decoration:none;
             padding: 10px;
         }
         nav ul li {
             margin: 0 15px;
+            list-style: none;
+            text-decoration:none;
         }
         nav ul li a {
             color: white;
@@ -103,12 +107,14 @@
         @media (min-width: 768px) {
             main {
                 display: flex;
+                flex-direction:row;
             }
             .content {
                 flex:2;
             }
             aside {
                 flex:1;
+                max-width:30%;
             }
             .links-titles-wrapper {
                 display:flex;
