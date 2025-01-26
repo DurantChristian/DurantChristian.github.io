@@ -68,17 +68,21 @@
             margin-top: 10px;
             display: flex;
         }
+        .article-content {
+            display:flex;
+            flex-direction:column;
+        }
         article img {
             display: block;
             margin: 10px auto;
         }
         .image-right {
             order:1;
-            margin-left:10px;
+            margin-left:15px;
         }
         .image-left {
             order:-1;
-            margin-right:10px;
+            margin-right:15px;
         }
         .links-titles-wrapper {
             display:flex;
