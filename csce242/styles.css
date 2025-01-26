@@ -31,6 +31,7 @@ body {
 #assignments-heading {
     font-size:26px;
     color:#004d80;
+    text-align:center;
     margin-bottom:20px;
     font-weight:600;
 }
@@ -69,5 +70,10 @@ body {
     .assignments {
         flex-direction:column;
         align-items:center;
+    }
+
+    .assignment {
+        width:80%;
+        max-width:300px;
     }
 }
