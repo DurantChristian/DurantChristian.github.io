@@ -72,11 +72,11 @@
             margin: 10px auto;
         }
         .image-right {
-            float:right;
+            order:1;
             margin-left:10px;
         }
         .image-left {
-            float:left;
+            order:-1;
             margin-right:10px;
         }
         .links-titles-wrapper {
