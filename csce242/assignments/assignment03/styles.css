@@ -112,7 +112,7 @@
                 flex-direction:row;
             }
             nav ul {
-                display:row;
+                flex-direction:column;
                 justify-content:center;
             }
             nav ul li {
