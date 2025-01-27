@@ -64,7 +64,6 @@
             color: white;
             margin-top: 10px;
             display: flex;
-            justify-content:center;
         }
         .article-content {
             display:flex;
@@ -84,7 +83,6 @@
         }
         .links-titles-wrapper {
             display:flex;
-            justify-content:center;
         }
         .titles {
             display: flex;
@@ -97,8 +95,7 @@
         }
         .title-box {
             background-color: #ffcc66;
-            padding: 20px;
-            text-align:center;
+            padding: 20px;;
         }
         .title-box img {
             width:200px;
