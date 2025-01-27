@@ -107,8 +107,7 @@
         }
         @media (min-width: 768px) {
             main {
-                display: flex;
-                flex-direction:row;
+                flex-direction:column;
             }
             nav ul {
                 flex-direction:row;
