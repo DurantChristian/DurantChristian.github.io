@@ -22,7 +22,6 @@
         }
         nav ul {
             display:flex;
-            flex-direction:column;
             justify-content: center;
             list-style: none;
             text-decoration:none;
@@ -40,6 +39,7 @@
         }
         main {
             display: flex;
+            flex-direction:column;
             margin-top: 20px;
         }
         .content {
@@ -108,7 +108,6 @@
         }
         @media (min-width: 768px) {
             main {
-                display: flex;
                 flex-direction:row;
             }
             nav ul {
@@ -123,6 +122,10 @@
             }
             aside {
                 flex:1;
+            }
+            article {
+                display:flex;
+                flex-direction:row;
             }
             .links-titles-wrapper {
                 display:flex;
