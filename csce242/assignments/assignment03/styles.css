@@ -85,6 +85,7 @@ article img {
 }
 .links-titles-wrapper {
     display:flex;
+    width:100%;
 }
 .titles {
     display: flex;
