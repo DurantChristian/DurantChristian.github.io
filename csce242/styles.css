@@ -10,6 +10,7 @@ body {
     background-color:white;
     border-radius:10px;
     box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow:hidden;
 }
 
 #main-heading {
@@ -38,6 +39,7 @@ body {
 
 .assignments {
     display: flex;
+    flex-wrap:wrap;
     justify-content:center;
     gap:20px;
 }
@@ -72,6 +74,7 @@ body {
     height:auto;
     max-height:150px;
     border-radius:5px;
+    object-fit:cover;
 }
 
 .assignment:hover {
@@ -85,7 +88,7 @@ body {
     }
 
     .assignment {
-        width:80%;
+        width:90%;
         max-width:300px;
     }
 }
