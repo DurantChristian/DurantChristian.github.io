@@ -87,6 +87,10 @@
             display:flex;
             justify-content:center;
         }
+        .left-titles-container,.right-titles-container {
+            display:flex;
+            justify-content:center;
+        }
         .titles {
             display: flex;
             flex-direction:column;
@@ -129,13 +133,16 @@
                 display:flex;
                 justify-content:center;
             }
-            .titles-container {
+            .left-titles-container,.right-titles-container {
                 display: grid;
                 grid-template-columns:repeat(2, 1fr);
             }
         }
         @media(min-width:900px) {
-            .titles-container {
+            .left-titles-container {
+                grid-template-columns:repeat(2,1fr);
+            }
+            .right-titles-container {
                 grid-template-columns:repeat(3,1fr);
             }
         }
