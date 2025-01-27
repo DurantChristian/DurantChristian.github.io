@@ -129,16 +129,13 @@
                 display:flex;
                 justify-content:center;
             }
-            .left-titles-container {
+            .titles-container {
                 display: grid;
                 grid-template-columns:repeat(2, 1fr);
             }
         }
         @media(min-width:900px) {
-            .left-titles-container {
-                grid-template-columns:repeat(2,1fr)
-            }
-            .right-titles-container {
+            .titles-container {
                 grid-template-columns:repeat(3,1fr);
             }
         }
