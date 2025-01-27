@@ -69,6 +69,7 @@
         .article-content {
             display:flex;
             flex-direction:column;
+            flex:1;
         }
         article img {
             display: block;
@@ -122,9 +123,6 @@
             }
             aside {
                 flex:1;
-            }
-            article {
-                flex-direction:column;
             }
             .links-titles-wrapper {
                 display:flex;
