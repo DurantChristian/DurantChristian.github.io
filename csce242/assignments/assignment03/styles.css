@@ -74,16 +74,15 @@ article {
 article img {
     display: block;
     margin: 10px auto;
+    flex:1;
 }
 .image-right {
     order:1;
     margin-left:10px;
-    width:100%;
 }
 .image-left {
     order:-1;
     margin-right:10px;
-    width:100%;
 }
 .links-titles-wrapper {
     display:flex;
