@@ -95,6 +95,10 @@
             display:flex;
             flex-direction:column;
         }
+        .titles-container-right{
+            display:flex;
+            flex-direction:column;
+        }
         .title-box {
             background-color: #ffcc66;
             padding: 20px;
@@ -128,13 +132,13 @@
                 display:flex;
                 justify-content:center;
             }
-            .titles-container {
+            .titles-container,.titles-container-right {
                 display: grid;
                 grid-template-columns:repeat(2, 1fr);
             }
         }
         @media(min-width:900px) {
-            .titles-container {
+            .titles-container-right {
                 grid-template-columns:repeat(3,1fr);
             }
         }
