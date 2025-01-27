@@ -126,9 +126,6 @@
             article {
                 flex-direction:column;
             }
-            article img {
-                max-width:100%;
-            }
             .links-titles-wrapper {
                 display:flex;
                 justify-content:center;
