@@ -75,10 +75,9 @@ body {
 
 .assignment:hover {
     transform:scale(1.1);
-    background-color:#0080ff;
 }
 
-@media(min-width: 900px) {
+@media(min-width: 768px) {
     .assignments {
         flex-direction:column;
         align-items:center;
