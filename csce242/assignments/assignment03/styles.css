@@ -65,7 +65,7 @@
             color: white;
             margin-top: 10px;
             display: flex;
-            flex-wrap:wrap;
+            justify-content:center;
         }
         .article-content {
             display:flex;
@@ -85,7 +85,7 @@
         }
         .links-titles-wrapper {
             display:flex;
-            flex-wrap:wrap;
+            justify-content:center;
         }
         .titles {
             display: flex;
@@ -127,6 +127,7 @@
             }
             .links-titles-wrapper {
                 display:flex;
+                justify-content:center;
             }
             .titles-container {
                 display: grid;
