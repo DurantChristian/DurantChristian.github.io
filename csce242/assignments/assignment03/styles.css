@@ -32,6 +32,7 @@ nav ul li {
     margin: 0 15px;
     list-style: none;
     text-decoration:none;
+    flex:1;
 }
 nav ul li a {
     color: white;
