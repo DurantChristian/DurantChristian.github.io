@@ -136,6 +136,7 @@
             }
             .links-titles-wrapper {
                 display:flex;
+            }
             .titles-container {
                 display: grid;
                 grid-template-columns:repeat(2, 1fr);
@@ -144,6 +145,5 @@
         @media(min-width:900px) {
             .titles-container {
                 grid-template-columns:repeat(3,1fr);
-            }
             }
         }
