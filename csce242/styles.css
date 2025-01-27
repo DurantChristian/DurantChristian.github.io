@@ -42,6 +42,12 @@ body {
     gap:20px;
 }
 
+.assignment a {
+    display:block;
+    text-decoration:none;
+    color:inherit;
+}
+
 .assignment {
     background-color:#004d80;
     padding:15px;
@@ -63,7 +69,7 @@ body {
     border-radius:5px;
 }
 
-.assignment img:hover {
+.assignment:hover {
     background-color:#0080ff;
 }
 
