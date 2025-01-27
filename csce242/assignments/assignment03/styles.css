@@ -95,10 +95,6 @@
             display:flex;
             flex-direction:column;
         }
-        .titles-container-right{
-            display:flex;
-            flex-direction:column;
-        }
         .title-box {
             background-color: #ffcc66;
             padding: 20px;
@@ -128,17 +124,24 @@
             aside {
                 flex:1;
             }
+            article {
+                flex-direction:column;
+                align-items:center;
+            }
+            article img {
+                max-width:100%;
+            }
             .links-titles-wrapper {
                 display:flex;
                 justify-content:center;
             }
-            .titles-container,.titles-container-right {
+            .titles-container {
                 display: grid;
                 grid-template-columns:repeat(2, 1fr);
             }
         }
         @media(min-width:900px) {
-            .titles-container-right {
+            .titles-container {
                 grid-template-columns:repeat(3,1fr);
             }
         }
