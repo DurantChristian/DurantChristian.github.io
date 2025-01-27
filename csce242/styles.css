@@ -4,7 +4,7 @@ body {
 }
 
 #content-container {
-    max-width:900px;
+    width:100%;
     margin:40px auto;
     padding:20px;
     background-color:white;
@@ -45,6 +45,7 @@ body {
 .assignment a {
     display:block;
     text-decoration:none;
+    list-style:none;
     color:inherit;
     width:100%;
     height:100%;
