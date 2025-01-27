@@ -108,10 +108,10 @@
         }
         @media (min-width: 768px) {
             main {
-                flex-direction:row;
+                flex-direction:column;
             }
             nav ul {
-                flex-direction:row;
+                flex-direction:column;
                 justify-content:center;
             }
             nav ul li {
