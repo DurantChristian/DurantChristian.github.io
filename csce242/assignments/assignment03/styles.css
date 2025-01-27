@@ -124,10 +124,6 @@
             aside {
                 flex:1;
             }
-            .links-titles-wrapper {
-                display:flex;
-                justify-content:center;
-            }
             .titles-container {
                 display: grid;
                 grid-template-columns:repeat(2, 1fr);
