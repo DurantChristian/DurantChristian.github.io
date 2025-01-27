@@ -41,7 +41,6 @@
         main {
             display: flex;
             flex-wrap: wrap;
-            width: 100%;
             margin-top: 20px;
         }
         .content {
@@ -52,7 +51,6 @@
         aside {
             background-color: #f08080;
             padding: 20px;
-            width:100%;
         }
         aside ul {
             list-style:none;
@@ -86,13 +84,6 @@
         }
         .links-titles-wrapper {
             display:flex;
-            width:100%;
-        }
-        .left-titles-container {
-            width:100%;
-        }
-        .right-titles-container {
-            width:100%;
         }
         .titles {
             display: flex;
@@ -107,7 +98,6 @@
             background-color: #ffcc66;
             padding: 20px;
             text-align:center;
-            width:100%;
         }
         .title-box img {
             width:200px;
@@ -132,7 +122,6 @@
             }
             aside {
                 flex:1;
-                width:100%;
             }
             .links-titles-wrapper {
                 display:flex;
