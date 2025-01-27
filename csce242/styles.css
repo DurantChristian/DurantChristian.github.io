@@ -1,86 +1,92 @@
 body {
-    font-family:Arial, Helvetica, sans-serif;
-    background-color:#a9a9ff
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #a9a9ff;
 }
 
 #content-container {
-    max-width:900px;
-    margin:40px auto;
-    padding:20px;
-    background-color:white;
-    border-radius:10px;
-    box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #main-heading {
     color: #004d80;
-    text-align:center;
-    margin:0;
-    font-size:32px;
-    font-weight:600;
+    text-align: center;
+    margin: 0;
+    font-size: 32px;
+    font-weight: 600;
 }
 
 #author-name {
-    color:#0080ff;
-    text-align:left;
-    font-size:22px;
-    font-weight:400;
-    margin-bottom:5px;
+    color: #0080ff;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 5px;
 }
 
 #assignments-heading {
-    font-size:26px;
-    color:#004d80;
-    text-align:center;
-    margin-bottom:20px;
-    font-weight:600;
+    font-size: 26px;
+    color: #004d80;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
 }
 
 .assignments {
     display: flex;
-    justify-content:center;
-    gap:20px;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px;
 }
 
 .assignment a {
-    display:block;
-    text-decoration:none;
-    color:inherit;
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 .assignment {
-    background-color:#004d80;
-    padding:15px;
-    width:300px;
-    border-radius:5px;
-    text-align:center;
-    box-shadow:2px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #004d80;
+    padding: 15px;
+    width: 300px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
 }
 
 .assignment h3 {
-    font-size:16px;
-    margin-bottom:10px;
-    color:#0080ff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #0080ff;
 }
 
 .assignment img {
-    width:300px;
-    height:150px;
-    border-radius:5px;
+    width: 100%; 
+    max-width: 280px; 
+    height: auto; 
+    border-radius: 5px;
 }
 
 .assignment:hover {
-    background-color:#0080ff;
+    background-color: #0080ff;
 }
 
-@media(min-width: 900px) {
+@media (min-width: 900px) {
     .assignments {
-        flex-direction:column;
-        align-items:center;
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: center;
     }
 
     .assignment {
-        width:80%;
-        max-width:300px;
+        width: 280px;
+        max-width: 300px;
     }
 }
