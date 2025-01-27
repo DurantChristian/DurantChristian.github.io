@@ -95,6 +95,7 @@ article img {
 .titles-container {
     display:flex;
     flex-direction:column;
+    justify-content:center;
 }
 .title-box {
     background-color: #ffcc66;
