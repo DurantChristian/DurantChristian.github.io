@@ -7,8 +7,6 @@ body, html {
 .gateways {
     background: black;
     color: white;
-    padding: 10px;
-    text-align: center;
     right:5px;
     top:0;
     position:absolute;
