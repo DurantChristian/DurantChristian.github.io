@@ -14,8 +14,9 @@ body {
 
 header, footer {
     background:#2B91AD;
-    padding:5px;
+    padding:20px 0;
     color:white;
+    position:relative;
 }
 
 .idea {
@@ -30,6 +31,14 @@ header, footer {
     margin-top:20px;
     padding:5px;
     text-align:center;
+    position:relative;
+    background:#2B91AD;
+    color:white;
+    bottom:0;
+}
+
+.idea-img p {
+    position:absolute;
 }
 
 .gallery {
@@ -45,6 +54,33 @@ header, footer {
     padding:5px;
 }
 
+/* Animation */
+#animation-fun {
+    height:200px;
+    padding:20px;
+    background:#CDECEF;
+    position:relative;
+}
+
+#ball {
+    height:30px;
+    width:30px;
+    background:white;
+    border-radius:50px;
+    animation-name:fun;
+    animation-duration:4s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes fun {
+    0% {background-color: red;}
+    20% {background-color:orange;}
+    40% {background-color:yellow;}
+    60% {background-color:green;}
+    80% {background-color:indigo;}
+    100% {background-color:violet;}
+}
+
 .gallery {
     text-wrap:wrap;
 }
@@ -53,14 +89,38 @@ main {
     padding:5px;
 }
 
+/* Playing with positioning */
+#main-logo {
+    position:absolute;
+    top:100px;
+    left:10px;
+}
+
 /* Navigation */
-#main-nav ul {
+#sub-nav {
+    position:absolute;
+    top:0;
+    right:5px;
+}
+
+/* Navigation */
+#main-nav ul, #sub-nav ul {
     padding-left:0;
+}
+
+#main-nav li, #sub-nav li {
+    list-style-type:none;
+    text-align:center;
+    border-bottom:1px solid white;
 }
 
 #main-nav li {
     list-style-type: none;  /* remove the bullets */
     background:#FFB58A;
+}
+
+#sub-nav li {
+    margin:0 5px; /* up and down no margin but right and left 5 */
 }
 
 #main-nav a {
@@ -69,9 +129,13 @@ main {
     border-bottom:1px solid transparent;
 }
 
-#main-nav a:hover {
+#main-nav a:hover, #sub-nav a:hover {
     color:crimson;
     border-bottom:1px solid white;
+}
+
+#main-nav a:hover {
+    color:crimson;
 }
 
 /* Typography */
@@ -110,5 +174,11 @@ footer p {
         
         .tile {
             width:40%;
+        }
+
+        .idea-img p {
+            padding:5px;
+            background:#2B91AD;
+            margin-top:20px;
     }
 }
