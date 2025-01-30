@@ -1,0 +1,122 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.gateways {
+    background: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.gateways a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.search-box {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.search-box input {
+    padding: 5px;
+}
+
+.main-header {
+    background: maroon;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(128, 0, 0, 0.85);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.news {
+    padding: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.news-item {
+    display: flex;
+    background: #f4f4f4;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.news-item img {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.news-content h3 {
+    color: maroon;
+}
+
+.view-more {
+    display: block;
+    text-align: right;
+    color: maroon;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.footer-top {
+    background: maroon;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-social img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+    background: maroon;
+    color: white;
+    padding: 20px;
+}
+
+.column h3 {
+    border-bottom: 1px solid white;
+}
+
+.footer-bottom {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
