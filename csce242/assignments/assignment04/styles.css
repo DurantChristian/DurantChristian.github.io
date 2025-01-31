@@ -25,15 +25,18 @@ body, html {
 
 .search-box {
     display: inline-block;
-    margin-left: 20px;
-    align-items:right;
+    margin-right: 20px;
     right:5px;
     bottom:5px;
-    background:black;
 }
 
 .search-box input {
     padding: 5px;
+    background:black;
+}
+
+#search-box::placeholder {
+    font-weight:bold;
 }
 
 .main-header {
