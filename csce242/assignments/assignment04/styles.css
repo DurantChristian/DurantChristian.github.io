@@ -47,6 +47,13 @@ body, html {
 .search-box input {
     padding: 5px;
     background: black;
+    color:white;
+    border:1px solid white;
+}
+
+.search-box input:hover {
+    background:white;
+    color:black;
 }
 
 #search-box::placeholder {
@@ -79,6 +86,98 @@ body, html {
     background: rgba(128, 0, 0, 0.85);
     padding: 15px;
     border-radius: 5px;
+}
+
+.sidebar {
+    width:250px;
+    background:#f4f4f4;
+    padding:20px;
+}
+
+.sidebar ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.sidebar ul li {
+    padding:10px;
+    border-bottom:1px solid #ccc;
+    font-weight:bold;
+}
+
+.sidebar ul li a {
+    text-decoration:none;
+    color:black;
+}
+
+.sidebar ul .active {
+    background:#e5e5e5;
+    color:maroon;
+    padding-left:10px;
+    border-left:5px solid maroon;
+}
+
+.my-arts {
+    margin-top:10px;
+    font-weight:bold;
+}
+
+.my-arts a {
+    color:maroon;
+    text-decoration:none;
+}
+
+main {
+    display:flex;
+    flex-direction:row;
+    gap:20px;
+    padding:20px;
+}
+
+.content {
+    flex-grow:1;
+}
+
+.content p {
+    font-size:16px;
+    margin-bottom:20px;
+}
+
+.image-flex {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.image-item {
+    text-align:center;
+    width:30%;
+    flex:1 1 30%;
+}
+
+.image-item img {
+    width:100%;
+    height:auto;
+    border-radius:5px;
+}
+
+.image-item h3 {
+    color:maroon;
+    font-size:18px;
+    margin-top:10px;
+}
+
+.image-item h3 a {
+    text-decoration:none;
+    color:maroon;
+    font-weight:bold;
+}
+
+.image-item p {
+    font-size:14px;
+    color:black;
 }
 
 .news {
