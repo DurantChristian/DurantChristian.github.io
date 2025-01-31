@@ -27,9 +27,8 @@ body, html {
     display: inline-block;
     justify-content: right;
     margin-top: 20px;
-    display:flex;
     background-color: black;
-
+    position:absolute;
 }
 
 .search-box button {
@@ -39,8 +38,8 @@ body, html {
     display:flex;
 }
 
-.search-box button a:hover {
-    background:white;
+.search-box button a {
+    color:white;
     font:black;
 }
 
