@@ -26,6 +26,8 @@ body, html {
 .search-box {
     display: inline-block;
     margin-left: 20px;
+    right:5px;
+    bottom:5px;
 }
 
 .search-box input {
