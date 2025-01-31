@@ -31,8 +31,9 @@ body, html {
     position:absolute;
 }
 
-.search-box a{
+.search-box input:hover{
     background-color:white;
+    color:black;
 }
 
 .search-box button {
@@ -54,6 +55,11 @@ body, html {
 
 #search-box::placeholder {
     font-weight:bold;
+    color:black;
+}
+
+#search-box a {
+    color: white;
 }
 
 .main-header {
