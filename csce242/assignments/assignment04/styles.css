@@ -25,9 +25,10 @@ body, html {
 
 .search-box {
     display: inline-block;
-    text-align:right;
+    justify-content: center;
     margin-top: 20px;
     display:flex;
+
 }
 
 .search-box button {
