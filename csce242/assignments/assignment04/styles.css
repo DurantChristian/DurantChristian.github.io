@@ -27,15 +27,17 @@ body, html {
     display: inline-block;
     text-align:right;
     margin-top: 20px;
+    display:flex;
 }
 
 .search-box button {
     background:black;
     font:white;
     align-items:right;
+    display:flex;
 }
 
-.search-box button:hover {
+#search-box button:hover {
     background:white;
     font:black;
 }
