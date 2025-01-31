@@ -29,7 +29,12 @@ body, html {
     margin-top: 20px;
 }
 
-.search-box:hover {
+.search-box button {
+    background:black;
+    font:white;
+}
+
+.search-box button:hover {
     background:white;
     font:black;
 }
