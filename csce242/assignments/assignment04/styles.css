@@ -17,7 +17,7 @@ body, html {
     position:absolute;
 }
 
-#gateways a:hover {
+.gateways a {
     color: white;
     text-decoration: none;
     margin: 0 5px;
@@ -27,8 +27,9 @@ body, html {
     display: inline-block;
     justify-content: right;
     margin-top: 20px;
+    display:flex;
     background-color: black;
-    position:absolute;
+
 }
 
 .search-box button {
@@ -39,15 +40,13 @@ body, html {
 }
 
 #search-box button:hover {
-    color:white;
+    background:white;
     font:black;
 }
 
 .search-box input {
     padding: 5px;
     background: black;
-    justify-content: right;
-    position:absolute;
 }
 
 #search-box::placeholder {
