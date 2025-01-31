@@ -31,6 +31,10 @@ body, html {
     position:absolute;
 }
 
+.search-box a{
+    background-color:white;
+}
+
 .search-box button {
     background:black;
     font:white;
