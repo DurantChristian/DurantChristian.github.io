@@ -25,14 +25,17 @@ body, html {
 
 .search-box {
     display: inline-block;
-    margin-right: 20px;
-    right:5px;
-    bottom:5px;
+    text-align:right;
+    margin-top: 20px;
+}
+
+.search-box:hover {
+    background:white;
+    font:black;
 }
 
 .search-box input {
     padding: 5px;
-    background:black;
 }
 
 #search-box::placeholder {
