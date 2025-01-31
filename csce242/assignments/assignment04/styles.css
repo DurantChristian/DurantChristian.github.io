@@ -39,7 +39,7 @@ body, html {
     display:flex;
 }
 
-#search-box button:hover {
+.search-box button a:hover {
     background:white;
     font:black;
 }
