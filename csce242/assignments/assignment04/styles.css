@@ -46,6 +46,8 @@ body, html {
 .search-box input {
     padding: 5px;
     background: black;
+    justify-content: right;
+    position:absolute;
 }
 
 #search-box::placeholder {
