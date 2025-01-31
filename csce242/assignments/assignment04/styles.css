@@ -31,11 +31,6 @@ body, html {
     position:absolute;
 }
 
-.search-box input:hover{
-    background-color:white;
-    color:black;
-}
-
 .search-box button {
     background:black;
     font:white;
@@ -43,7 +38,7 @@ body, html {
     display:flex;
 }
 
-.search-box button a {
+.search-box button:hover {
     color:white;
     font:black;
 }
@@ -55,11 +50,6 @@ body, html {
 
 #search-box::placeholder {
     font-weight:bold;
-    color:black;
-}
-
-#search-box a {
-    color: white;
 }
 
 .main-header {
