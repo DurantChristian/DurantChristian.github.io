@@ -96,6 +96,7 @@ body, html {
 
 .sidebar ul {
     list-style:none;
+    text-decoration:none;
     padding:0;
     margin:0;
 }
@@ -115,7 +116,6 @@ body, html {
     background:#CC2E40;
     color:white;
     text-decoration:none;
-    list-style:none;
 }
 
 .sidebar ul .active {
@@ -137,7 +137,7 @@ body, html {
 
 main {
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     gap:20px;
     padding:20px;
 }
@@ -227,6 +227,7 @@ main {
     color: white;
     padding: 20px;
     text-align: left;
+    align-items:center;
     display:flex;
 }
 
