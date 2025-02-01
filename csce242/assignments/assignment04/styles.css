@@ -245,7 +245,7 @@ main {
 .footer-social img {
     width: 30px;
     margin: 0 5px;
-    align-items:right;
+    justify-content:right;
 }
 
 .footer-columns {
