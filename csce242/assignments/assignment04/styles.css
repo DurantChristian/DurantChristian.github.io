@@ -238,6 +238,10 @@ main {
     display:flex;
 }
 
+.footer-top h2 {
+    margin:0;
+}
+
 .footer-social img {
     width: 30px;
     margin: 0 5px;
