@@ -238,9 +238,14 @@ main {
     display:flex;
 }
 
+.footer-top h2 {
+    color:#ccc
+}
+
 .footer-social img {
     width: 30px;
     margin: 0 5px;
+    align-items:right;
 }
 
 .footer-columns {
