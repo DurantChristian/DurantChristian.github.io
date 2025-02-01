@@ -129,7 +129,7 @@ body, html {
 }
 
 .my-arts a {
-    color:maroon;
+    color:black;
     text-decoration:none;
 }
 
@@ -224,7 +224,7 @@ main {
     background: maroon;
     color: white;
     padding: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .footer-social img {
@@ -247,6 +247,6 @@ main {
 .footer-bottom {
     background: black;
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 10px;
 }
