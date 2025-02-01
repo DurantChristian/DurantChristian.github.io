@@ -111,7 +111,7 @@ body, html {
     color:black;
 }
 
-#sidebar ul li a:hover {
+.sidebar ul li a:hover {
     background:#CC2E40;
     color:white;
 }
