@@ -115,6 +115,7 @@ body, html {
     background:#CC2E40;
     color:white;
     text-decoration:none;
+    list-style:none;
 }
 
 .sidebar ul .active {
