@@ -239,6 +239,10 @@ main {
 }
 
 .footer-top h2 {
+    color:white;
+}
+
+.footer-top h3 {
     color:#ccc
 }
 
