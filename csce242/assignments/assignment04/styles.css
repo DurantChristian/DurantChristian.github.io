@@ -270,3 +270,9 @@ main {
     text-align: left;
     padding: 10px;
 }
+
+@media only screen and(min-width: 768px) {
+    .image-flex {
+        display:flex;
+    }
+}
