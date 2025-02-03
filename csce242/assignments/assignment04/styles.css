@@ -79,13 +79,6 @@ body, html {
 
 }
 
-.search-box button {
-    font:white;
-    font-weight:bold;
-    align-items:right;
-    display:flex;
-}
-
 #search-box button:hover {
     background:white;
     font:black;
