@@ -191,14 +191,14 @@ main {
 
 .image-item p {
     font-size:14px;
-    color:maroon;
+    color:black;
 }
 
 .news {
     padding: 20px;
 }
 
-.maroon-text {
+.maroon-text p, .maroon-text h2{
     color:maroon;
 }
 
@@ -257,7 +257,6 @@ main {
 }
 
 .footer-columns {
-    display: flex;
     justify-content: space-around;
     background: maroon;
     color: white;
