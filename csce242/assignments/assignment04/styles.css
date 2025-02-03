@@ -16,7 +16,7 @@ body, html {
     background:maroon;
 }
 
-.usc-logo {
+.ribbon-left .usc-logo {
     height:50px;
 }
 
@@ -109,6 +109,22 @@ body, html {
 
 #search-box::placeholder {
     font-weight:bold;
+    color:white;
+}
+
+.search-box button {
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.search-box button:hover {
+    background: white;
+    color: black;
 }
 
 .college-ribbon {
