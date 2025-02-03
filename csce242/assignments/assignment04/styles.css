@@ -17,6 +17,10 @@ body, html {
     height:50px;
 }
 
+.ribbon-left {
+    gap:10px;
+}
+
 .ribbon-center {
     flex-grow:1;
     text-align:center;
@@ -34,6 +38,11 @@ body, html {
     margin: 0;
     font-size: 30px;
     font-weight: bold;
+}
+
+.university-title {
+    text-align:left;
+    color:white;
 }
 
 .ribbon-right {
@@ -71,8 +80,8 @@ body, html {
 }
 
 .search-box button {
-    background:black;
     font:white;
+    font-weight:bold;
     align-items:right;
     display:flex;
 }
