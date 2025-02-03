@@ -16,13 +16,19 @@ body, html {
     background:maroon;
 }
 
-.ribbon-left .usc-logo {
+.usc-logo {
     height:50px;
+}
+
+.ribbon-left {
+    display:flex;
+    align-items:center;
+    gap:10px;
 }
 
 .ribbon-center {
     flex-grow:1;
-    text-align:left;
+    text-align:center;
 }
 
 .university-title h3 {
@@ -37,6 +43,10 @@ body, html {
     margin: 0;
     font-size: 30px;
     font-weight: bold;
+}
+
+.university-title {
+    text-align:left;
 }
 
 .ribbon-right {
@@ -354,7 +364,7 @@ main {
 }
 
 .footer-columns {
-    justify-content: space-around;
+    justify-content: space-between;
     background: maroon;
     color: white;
     padding: 20px;
