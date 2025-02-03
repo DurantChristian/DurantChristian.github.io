@@ -6,11 +6,14 @@ body, html {
 
 .top-ribbon {
     background: black;
-    color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
+}
+
+.college-ribbon {
+    background:maroon;
 }
 
 .ribbon-left .usc-logo {
@@ -99,8 +102,8 @@ body, html {
 }
 
 .college-ribbon {
-    background: maroon;
-    color: white;
+    font: white;
+    color: maroon;
     display: flex;
     align-items: left;
     padding: 20px;
