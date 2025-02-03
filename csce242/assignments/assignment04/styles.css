@@ -252,6 +252,7 @@ main {
 .footer-ribbon h2{
     margin-left: 0;
     color: black;
+    justify-content:left;
 }
 
 .footer-ribbon ul {
@@ -272,6 +273,7 @@ main {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    justify-content:right;
 }
 
 .footer-top {
