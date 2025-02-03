@@ -22,7 +22,7 @@ body, html {
 
 .ribbon-center {
     flex-grow:1;
-    text-align:center;
+    text-align:left;
 }
 
 .university-title h3 {
@@ -287,7 +287,7 @@ main {
     padding: 15px 30px;
     display:flex;
     justify-content:space-between;
-    align-items: center;
+    gap:20px;
 }
 
 .footer-ribbon .ribbon-content {
@@ -298,7 +298,7 @@ main {
 .footer-ribbon h2{
     margin-left: 0;
     color: black;
-    justify-content:left;
+    text-align:left;
 }
 
 .footer-ribbon ul {
@@ -331,12 +331,20 @@ main {
     display:flex;
 }
 
-.footer-top h2 {
+.footer-top h1 {
     color:white;
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .footer-top h3 {
-    color:#ccc
+    color:#ccc;
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .footer-social img {
