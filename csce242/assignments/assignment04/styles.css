@@ -238,8 +238,10 @@ main {
 
 .footer-ribbon {
     background-color: #e5e5e5;
-    padding: 10px 0;
-    text-align: center;
+    padding: 15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
 }
 
 .footer-ribbon .ribbon-content {
@@ -248,7 +250,7 @@ main {
 }
 
 .footer-ribbon h2{
-    margin: 0;
+    margin-left: 0;
     color: black;
 }
 
@@ -257,6 +259,8 @@ main {
     padding: 0;
     margin: 10px 0;
     font-size: 14px;
+    display:flex;
+    gap:20px;
 }
 
 .footer-ribbon ul li {
