@@ -4,6 +4,44 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
+.top-ribbon {
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.ribbon-left .usc-logo {
+    height:50px;
+}
+
+.ribbon-center {
+    flex-grow:1;
+    text-align:center;
+}
+
+.university-title h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.university-title h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.ribbon-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .gateways {
     background: black;
     color: white;
@@ -60,12 +98,17 @@ body, html {
     font-weight:bold;
 }
 
-.main-header {
+.college-ribbon {
     background: maroon;
     color: white;
     display: flex;
-    align-items: center;
+    align-items: left;
     padding: 20px;
+}
+
+.college-ribbon h1 {
+    margin:0;
+    font-size:24px;
 }
 
 .hero {
