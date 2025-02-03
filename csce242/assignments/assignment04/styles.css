@@ -104,12 +104,17 @@ body, html {
 
 .search-box input:hover {
     background:white;
-    font:black;
+    color:black;
 }
 
 #search-box::placeholder {
     font-weight:bold;
     color:white;
+}
+
+.search-box::placeholder:hover {
+    font-weight:bold;
+    color:#ccc;
 }
 
 .search-box button {
