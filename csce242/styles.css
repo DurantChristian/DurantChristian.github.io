@@ -44,7 +44,7 @@ body {
     gap:20px;
 }
 
-.assignment a {
+.assignment a, .project a {
     display:block;
     text-decoration:none;
     width:100%;
