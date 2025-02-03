@@ -236,6 +236,40 @@ main {
     margin-top: 10px;
 }
 
+.footer-ribbon {
+    background-color: #e5e5e5;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-ribbon .ribbon-content {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+}
+
+.footer-ribbon h2{
+    margin: 0;
+    color: black;
+}
+
+.footer-ribbon ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.footer-ribbon ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-ribbon ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
 .footer-top {
     background: maroon;
     color: white;
