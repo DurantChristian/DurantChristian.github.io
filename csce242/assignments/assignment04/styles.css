@@ -160,7 +160,7 @@ main {
 
 .image-flex {
     flex-wrap:wrap;
-    flex-direction:row;
+    display:flex;
     width:50%;
     justify-content:space-between;
     gap:20px;
@@ -197,6 +197,10 @@ main {
 
 .news {
     padding: 20px;
+}
+
+.maroon-text {
+    color:maroon;
 }
 
 .social-icons img {
@@ -293,6 +297,7 @@ main {
 @media only screen and(min-width: 768px) {
     .image-flex {
         display:flex;
+        flex-direction:row;
     }
 
     .footer-columns .column {
