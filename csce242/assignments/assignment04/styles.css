@@ -153,6 +153,10 @@ main {
     flex-grow:1;
 }
 
+.content .image-flex {
+    margin-left:20px;
+}
+
 .content p {
     font-size:16px;
     margin-bottom:20px;
@@ -160,7 +164,7 @@ main {
 
 .image-flex {
     flex-wrap:wrap;
-    width:50%;
+    width:100%;
     justify-content:space-between;
     gap:20px;
 }
@@ -168,7 +172,6 @@ main {
 .image-item {
     text-align:center;
     width:30%;
-    flex:1 1 30%;
 }
 
 .image-item img {
@@ -198,7 +201,7 @@ main {
     padding: 20px;
 }
 
-.maroon-text p, .maroon-text h2{
+.news p, .news h2{
     color:maroon;
 }
 
@@ -262,7 +265,7 @@ main {
     color: white;
     padding: 20px;
     gap:20px;
-    flex:1 1 calc(100% / 6);
+    display:row;
     min-width:150px;
     flex-wrap:wrap;
 }
@@ -271,7 +274,7 @@ main {
     border-bottom: 1px solid white;
 }
 
-.footer-columns .column {
+.column {
     flex:1 1 calc(100% / 3);
     min-width:150px;
 }
