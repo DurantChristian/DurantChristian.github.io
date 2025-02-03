@@ -160,6 +160,7 @@ main {
 
 .image-flex {
     flex-wrap:wrap;
+    flex-direction:row;
     width:50%;
     justify-content:space-between;
     gap:20px;
@@ -261,10 +262,16 @@ main {
     gap:20px;
     flex:1 1 calc(100% / 6);
     min-width:150px;
+    flex-wrap:wrap;
 }
 
 .column h3 {
     border-bottom: 1px solid white;
+}
+
+.footer-columns .column {
+    flex:1 1 calc(100% / 3);
+    min-width:150px;
 }
 
 .footer-columns ul {
@@ -286,5 +293,9 @@ main {
 @media only screen and(min-width: 768px) {
     .image-flex {
         display:flex;
+    }
+
+    .footer-columns .column {
+        flex: 1 1 calc(100% / 6);
     }
 }
