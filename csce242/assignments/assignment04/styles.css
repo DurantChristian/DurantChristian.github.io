@@ -10,6 +10,7 @@ body, html {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
+    font:white;
 }
 
 .college-ribbon {
@@ -47,6 +48,7 @@ body, html {
 
 .university-title {
     text-align:left;
+    font:white;
 }
 
 .ribbon-right {
@@ -102,7 +104,7 @@ body, html {
     border:1px solid white;
 }
 
-.search-box input:hover {
+#search-box input:hover {
     background:white;
     color:black;
 }
