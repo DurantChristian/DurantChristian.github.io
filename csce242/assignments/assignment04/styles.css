@@ -160,7 +160,6 @@ main {
 
 .image-flex {
     flex-wrap:wrap;
-    display:flex;
     width:50%;
     justify-content:space-between;
     gap:20px;
@@ -192,7 +191,7 @@ main {
 
 .image-item p {
     font-size:14px;
-    color:black;
+    color:maroon;
 }
 
 .news {
@@ -297,10 +296,5 @@ main {
 @media only screen and(min-width: 768px) {
     .image-flex {
         display:flex;
-        flex-direction:row;
-    }
-
-    .footer-columns .column {
-        flex: 1 1 calc(100% / 6);
     }
 }
