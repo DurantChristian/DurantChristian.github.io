@@ -6,25 +6,15 @@ body, html {
 
 .top-ribbon {
     background: black;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    font:white;
-}
-
-.college-ribbon {
-    background:maroon;
 }
 
 .ribbon-left .usc-logo {
     height:50px;
-}
-
-.ribbon-left {
-    display:flex;
-    align-items:center;
-    gap:10px;
 }
 
 .ribbon-center {
@@ -44,11 +34,6 @@ body, html {
     margin: 0;
     font-size: 30px;
     font-weight: bold;
-}
-
-.university-title {
-    text-align:left;
-    font:white;
 }
 
 .ribbon-right {
@@ -104,41 +89,20 @@ body, html {
     border:1px solid white;
 }
 
-#search-box input:hover {
+.search-box input:hover {
     background:white;
     color:black;
 }
 
 #search-box::placeholder {
     font-weight:bold;
-    color:white;
-}
-
-.search-box::placeholder:hover {
-    font-weight:bold;
-    color:#ccc;
-}
-
-.search-box button {
-    background: black;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-left: 5px;
-    font-size: 14px;
-    padding: 5px 10px;
-}
-
-.search-box button:hover {
-    background: white;
-    color: black;
 }
 
 .college-ribbon {
-    font: white;
-    color: maroon;
+    background: maroon;
+    color: white;
     display: flex;
-    align-items: center;
+    align-items: left;
     padding: 20px;
 }
 
@@ -320,7 +284,7 @@ main {
     padding: 15px 30px;
     display:flex;
     justify-content:space-between;
-    gap:20px;
+    align-items: center;
 }
 
 .footer-ribbon .ribbon-content {
@@ -331,7 +295,7 @@ main {
 .footer-ribbon h2{
     margin-left: 0;
     color: black;
-    text-align:left;
+    justify-content:left;
 }
 
 .footer-ribbon ul {
@@ -364,20 +328,12 @@ main {
     display:flex;
 }
 
-.footer-top h1 {
+.footer-top h2 {
     color:white;
-    margin: 0;
-    font-size: 30px;
-    font-weight: bold;
 }
 
 .footer-top h3 {
-    color:#ccc;
-    margin: 0;
-    font-size: 18px;
-    font-weight: normal;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    color:#ccc
 }
 
 .footer-social img {
@@ -387,7 +343,7 @@ main {
 }
 
 .footer-columns {
-    justify-content: space-between;
+    justify-content: space-around;
     background: maroon;
     color: white;
     padding: 20px;
