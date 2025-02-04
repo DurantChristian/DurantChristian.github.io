@@ -431,14 +431,5 @@ main {
         grid-template-rows: repeat(2, auto);
     }
 }
-
-    .image-item {
-        text-align:center;
-    }
-    .image-item img {
-        width:100%;
-        height:auto;
-        border-radius:5px;
-    }
 }
 }
