@@ -407,11 +407,8 @@ main {
     main {
         display:flex;
     }
-    .sidebar {
-        width:100%;
-    }
     .content {
-        width:100%;
+        flex:1;
     }
 }
 
