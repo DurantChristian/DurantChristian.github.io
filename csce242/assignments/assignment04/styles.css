@@ -372,6 +372,7 @@ main {
     color: white;
     padding: 20px;
     gap:20px;
+    display:row;
     min-width:150px;
     flex-wrap:wrap;
     display:grid;
@@ -411,11 +412,6 @@ main {
     .image-flex {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, auto);  
-    }
-    .footer-columns {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: auto;
     }
 
 @media only screen and(max-width:700px) {
