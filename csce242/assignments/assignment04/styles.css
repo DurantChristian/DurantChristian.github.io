@@ -419,7 +419,7 @@ main {
         width:100%;
     }
     .gateways {
-        display:none;
+        display:none !important;
     }
     .image-flex {
         grid-template-columns: repeat(3, 1fr);
