@@ -367,7 +367,7 @@ main {
 }
 
 .footer-columns {
-    justify-content: space-around;
+    justify-content: space-between;
     background: maroon;
     color: white;
     padding: 20px;
