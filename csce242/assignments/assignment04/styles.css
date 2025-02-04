@@ -195,7 +195,7 @@ main {
 }
 
 .content {
-    display:flex;
+    flex-grow:1;
     padding:20px;
 }
 
@@ -367,15 +367,14 @@ main {
 }
 
 .footer-columns {
-    justify-content: space-between;
+    justify-content: space-around;
     background: maroon;
     color: white;
     padding: 20px;
     gap:20px;
     min-width:150px;
     flex-wrap:wrap;
-    display:flex;
-    flex-direction:row;
+    display:row;
 }
 
 .column h3 {
@@ -406,7 +405,6 @@ main {
 @media only screen and(min-width:768px) {
     main {
         display:flex;
-        flex-direction:column;
     }
     .sidebar {
         width:100%;
