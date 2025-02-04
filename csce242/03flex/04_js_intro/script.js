@@ -9,5 +9,5 @@ document.getElementById("btn-color").onclick = () => {
     console.log("Hello world");
     const messageP = document.getElementById("message");
     messageP.innerHTML = "Good bye";
-    messageP.classList.add("sad");
+    messageP.classList.toggle("sad");
 }
