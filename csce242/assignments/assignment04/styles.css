@@ -402,11 +402,6 @@ main {
     padding: 10px;
 }
 
-@media only screen and(min-width: 768px) {
-    .gateways {
-        display:block;
-    }
-
 @media only screen and(max-width:1024px) {
     .gateways {
         display:block;
@@ -416,7 +411,7 @@ main {
         grid-template-rows: repeat(3, auto);  
     }
 
-@media only screen and(max-width:600px) {
+@media only screen and(max-width:700px) {
     main {
         flex-direction:column;
     }
@@ -430,6 +425,5 @@ main {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, auto);
     }
-}
 }
 }
