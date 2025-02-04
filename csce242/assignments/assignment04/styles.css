@@ -188,7 +188,6 @@ body, html {
 }
 
 main {
-    flex-direction:column;
     display:flex;
     gap:20px;
     padding:20px;
@@ -196,6 +195,7 @@ main {
 
 .content {
     display:flex;
+    flex-grow:1;
     padding:20px;
 }
 
