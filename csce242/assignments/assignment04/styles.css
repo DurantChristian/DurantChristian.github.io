@@ -374,7 +374,8 @@ main {
     gap:20px;
     min-width:150px;
     flex-wrap:wrap;
-    display:row;
+    display:flex;
+    flex-direction:row;
 }
 
 .column h3 {
