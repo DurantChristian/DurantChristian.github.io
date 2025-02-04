@@ -195,7 +195,8 @@ main {
 }
 
 .content {
-    flex-grow:1;
+    display:flex;
+    flex:1;
     padding:20px;
 }
 
