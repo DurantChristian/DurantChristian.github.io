@@ -372,7 +372,6 @@ main {
     color: white;
     padding: 20px;
     gap:20px;
-    display:row;
     min-width:150px;
     flex-wrap:wrap;
     display:grid;
@@ -385,8 +384,8 @@ main {
 }
 
 .column {
-    flex:1 1 calc(100% / 3);
-    min-width:150px;
+    background:transparent;
+    padding:10px;
 }
 
 .footer-columns ul {
