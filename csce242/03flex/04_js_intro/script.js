@@ -32,8 +32,9 @@ document.getElementById("btn-clear").onclick = () => {
     document.getElementById("display").classList.add("hidden");
 };
 
-document.getElementById("textbox").onkeydown = () => {
-    const emotion = document.getElementById("textbox");
-    emotion.classList.equal("emo");
-    emotion.innerHTML = "You are very emo";
+document.getElementById("textbox").onkeydown = (event) => {
+    //const emotion = document.getElementById("textbox").value;
+    const emotion = event.currentTarget.value;
+    console.log(emotion);
+    document.getElementById("emotional-message").innerHTML = "You are very " + event.currentTarget.value;
 }
