@@ -34,4 +34,6 @@ document.getElementById("btn-clear").onclick = () => {
 
 document.getElementById("textbox").onclick = () => {
     const displayP = document.getElementById("display");
+    displayP.classList.add("emo");
+    displayP.innerHTML = "You are very emo";
 }
