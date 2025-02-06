@@ -32,8 +32,8 @@ document.getElementById("btn-clear").onclick = () => {
     document.getElementById("display").classList.add("hidden");
 };
 
-document.getElementById("textbox").onclick = () => {
+document.getElementById("textbox").onkeydown = () => {
     const displayP = document.getElementById("display");
-    displayP.classList.add("emo");
+    displayP.classList.equal("emo");
     displayP.innerHTML = "You are very emo";
 }
