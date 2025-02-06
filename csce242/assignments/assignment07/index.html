@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 7 - JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Assignment 7</h1>
+        <h2>Introduction to JavaScript</h2>
+
+        <div class="cards">
+            <!-- Say Hello Card -->
+            <div class="card hello-card" onclick="addHello(this)"> 
+                <p>Say Hello</p>
+                <div class="hello-text"></div>
+            </div>
+
+            <!-- Pick a Color Card -->
+            <div class="card">
+                <p>Pick a Color</p>
+                <input type="color" id="colorPicker">
+                <span class="star">★</span>
+            </div>
+
+            <!-- Image Change Card -->
+            <div class="card">
+                <p>Image Change</p>
+                <img src="image1.jpg" alt="Placeholder" class="toggle-image" onclick="changeImage(this)">
+            </div>
+        </div>
+
+        <footer>@durantchristian.com</footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
