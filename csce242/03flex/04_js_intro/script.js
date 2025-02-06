@@ -33,7 +33,7 @@ document.getElementById("btn-clear").onclick = () => {
 };
 
 document.getElementById("textbox").onkeydown = () => {
-    const displayP = document.getElementById("display");
-    displayP.classList.equal("emo");
-    displayP.innerHTML = "You are very emo";
+    const emotion = document.getElementById("textbox");
+    emotion.classList.equal("emo");
+    emotion.innerHTML = "You are very emo";
 }
