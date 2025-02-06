@@ -72,6 +72,10 @@ main {
     color:purple;
 }
 
+.hidden {
+    display:none;
+}
+
 /* Animations */
 #animation-fun {
     background:#a0ccd8;
