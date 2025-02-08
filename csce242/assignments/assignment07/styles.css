@@ -60,7 +60,7 @@ input[type="color"] {
 .star {
     font-size: 40px;
     display: block;
-    color: #F28FAD;
+    color: black;
 }
 
 .toggle-image {
@@ -78,6 +78,5 @@ footer {
 @media (max-width: 600px) {
     .cards {
         flex-direction: column;
-        gap: 10px;
     }
 }
