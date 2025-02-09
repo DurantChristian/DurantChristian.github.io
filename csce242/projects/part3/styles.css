@@ -83,6 +83,7 @@ main {
     font-size: 1em;
     color: #333;
     margin-top: 10px;
+    text-decoration:none;
 }
 
 .reviews-search input {
@@ -564,6 +565,7 @@ button {
 
 .featured-img {
     width: 100%;
+    height:200px;
     margin-bottom: 20px;
 }
 
