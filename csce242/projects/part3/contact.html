@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us - Gaming Overload</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="reviews.html">Game Reviews</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="dashboard.html">User Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <main>
+        <section class="contact-content">
+            <h2>Get in Touch</h2>
+            <p>Need help with an order or have a question? Our team is here for you!</p>
+
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="contact-method">Preferred Contact Method:</label>
+                <select id="contact-method" name="contact-method">
+                    <option>Email</option>
+                    <option>Phone</option>
+                    <option>Text</option>
+                </select>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+                <button type="reset">Cancel</button>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Phone support: +1 (800) 123-GAMING (Monday–Friday, 9am – 6pm EST)</p>
+            <p>Email: support@gamingoverload.com</p>
+            <p>Live chat: Available on our website from 9am – 9pm EST</p>
+        </section>
+
+        <section class="faq">
+            <h2>FAQ</h2>
+            <ul>
+                <li><a href="#">Order tracking</a></li>
+                <li><a href="#">Return policy</a></li>
+                <li><a href="#">Shipping details</a></li>
+                <li><a href="#">Game recommendations</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
