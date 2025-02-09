@@ -38,6 +38,11 @@ header {
 main {
     padding: 20px;
 }
+
+.about-placeholder img {
+     justify-items:right;
+     align-items:center;
+}
 <!--mainpage-->
 .index-container {
     display: flex;
@@ -46,7 +51,7 @@ main {
     align-items: flex-start;
 }
 
-.highlights, .promotions, .latest-arrivals, .about-placeholder {
+.highlights, .promotions, .latest-arrivals {
     flex: 1;
     background: white;
     padding: 15px;
