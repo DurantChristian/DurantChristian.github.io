@@ -47,7 +47,8 @@ main {
 }
 
 .highlights, .promotions, .latest-arrivals {
-    flex: 1;
+    display:flex;
+    gap:20px;
     background: white;
     padding: 15px;
     border-radius: 5px;
