@@ -46,9 +46,8 @@ main {
     align-items: flex-start;
 }
 
-.highlights, .promotions, .latest-arrivals {
-    display:flex;
-    gap:20px;
+.highlights, .promotions, .latest-arrivals, .about-placeholder {
+    flex: 1;
     background: white;
     padding: 15px;
     border-radius: 5px;
