@@ -51,14 +51,6 @@ main {
     align-items: flex-start;
 }
 
-.highlights, .promotions, .latest-arrivals {
-    flex: 1;
-    background: white;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    min-height: 300px;
-}
 .highlights {
     text-align: center;
     margin: 20px 0;
@@ -122,12 +114,13 @@ main {
     margin-bottom: 15px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width:100%;
 }
 
 .review-box {
     border: 2px solid black;
     padding: 20px;
-    width: 60%;
+    width: 100%;
     margin: 20px auto;
     background-color: #f9f9f9;
 }
@@ -517,4 +510,104 @@ button {
 .activity-text {
     flex-grow: 1;
     margin-left: 10px;
+}
+<!--highlights-->
+.highlights-container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 600px;
+}
+
+.highlights-content {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+}
+
+.highlights-img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.highlights-text {
+    flex-grow: 1;
+}
+
+.highlights-text p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+<!--shop-->
+.shop-container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 800px;
+}
+
+.search-box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.featured-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.game-item {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.game-item img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.buy-btn {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+<!--order-->
+.order-container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+.order-img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
 }
