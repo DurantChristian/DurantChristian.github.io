@@ -255,7 +255,7 @@ button:hover {
     justify-content: center;
     gap: 20px;
 }
-<!--review page-->
+<!--reviewpage-->
 
 .review {
     background: white;
@@ -286,11 +286,235 @@ button:hover {
 .review a:hover {
     text-decoration: underline;
 }
-<!--witcher review-->
+<!--witcherreview-->
 .review-box {
     border: 2px solid black;
     padding: 20px;
     width: 60%;
     margin: 20px auto;
     background-color: #f9f9f9;
+}
+<!--userdashboard-->
+.secondary-nav {
+    background-color: #555;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.user-profiles, .user-details, .friends-list {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    min-height: 300px;
+}
+
+.user-profiles h2, .user-details h2, .friends-list h2 {
+    text-align: left;
+}
+
+.profile-box, .friend-box {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.profile-box img, .friend-box img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.profile-info, .friend-info {
+    flex-grow: 1;
+}
+
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.edit-btn {
+    background: #007BFF;
+}
+
+.delete-btn {
+    background: #ccc;
+    color: black;
+}
+
+.contact-btn {
+    background: #007BFF;
+}
+<!--settings-->
+.settings-container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.update-photo-btn {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.settings-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-form label {
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.settings-form input,
+.settings-form select {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.save-btn {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cancel-btn {
+    background: #ccc;
+    color: black;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+<!--notifications-->
+.notifications-container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+.notifications-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background: #555;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.notifications-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.notifications-list, .new-message-alert {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.notification-item {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.notification-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.notification-text {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.read-btn, .dismiss-btn {
+    margin-top: 10px;
+}
+<!--Activitylog-->
+.activity-container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.activity-item {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.activity-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.activity-text {
+    flex-grow: 1;
+    margin-left: 10px;
 }

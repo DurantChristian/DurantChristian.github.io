@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Settings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="reviews.html">Game Reviews</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="dashboard.html">User Dashboard</a></li>
+        </ul>
+    </nav>
+    
+    <nav class="secondary-nav">
+        <ul>
+            <li><a href="dashboard.html">Profile</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="notifications.html">Notifications</a></li>
+            <li><a href="activity.html">Activity</a></li>
+        </ul>
+    </nav>
+    <main class="settings-container">
+        <h2>Settings</h2>
+        <div class="profile-picture">
+            <img src="https://place-hold.it/150x150/ddd" alt="Profile Picture">
+            <button class="update-photo-btn">Update Photo</button>
+        </div>
+        
+        <form class="settings-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+            
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password">
+            
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <div class="form-buttons">
+                <button type="submit" class="save-btn">Save</button>
+                <button type="reset" class="cancel-btn">Cancel</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
