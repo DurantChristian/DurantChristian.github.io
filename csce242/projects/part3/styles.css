@@ -194,6 +194,7 @@ button:hover {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    width:100%;
 }
 
 .contact-content button:hover {
@@ -211,6 +212,7 @@ button:hover {
 
 .contact-info p, .faq ul {
     margin: 10px 0;
+    list-style-type:none;
 }
 .reviews-search input {
     width: 100%;
@@ -562,11 +564,10 @@ button {
 
 .featured-img {
     width: 100%;
-    height: auto;
     margin-bottom: 20px;
 }
 
-.games-grid {
+.game-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
