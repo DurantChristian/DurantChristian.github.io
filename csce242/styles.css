@@ -124,15 +124,26 @@ h2 {
     transform:scale(1.1);
 }
 
-@media(min-width: 768px) {
+@media (max-width: 768px) {
     .assignments, .projects {
-        flex-direction:column;
-        align-items:center;
-        text-decoration:none;
+        flex-direction: row;  
+        align-items: flex-start;
     }
 
     .assignment, .project {
-        max-width:300px;
-        text-decoration:none;
+        max-width: 300px; 
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .assignments, .projects {
+        flex-direction: column;  
+        align-items: center;     
+    }
+
+    .assignment, .project {
+        max-width: 300px;
+        text-decoration: none;
     }
 }
