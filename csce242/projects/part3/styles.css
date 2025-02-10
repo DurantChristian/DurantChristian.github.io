@@ -86,7 +86,7 @@ main {
     margin-top: 10px;
 }
 
-#grid-item a {
+.grid-item a {
     text-decoration:none;
 }
 
@@ -620,6 +620,6 @@ button {
 }
 @media (max-width: 600px) {
     #main-nav {
-        display:flex;
+        flex-direction:column;
     }
 }
