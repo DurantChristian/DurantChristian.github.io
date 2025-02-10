@@ -616,7 +616,10 @@ button {
     margin-bottom: 20px;
 }
 @media (max-width: 600px) {
-    man {
-        flex-direction: column;
+    main {
+        display:flex;
+    }
+    nav {
+        display:flex;
     }
 }
