@@ -36,6 +36,10 @@ header {
     color: white;
 }
 
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
 main {
     padding: 20px;
 }
