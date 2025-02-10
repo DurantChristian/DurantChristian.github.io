@@ -76,7 +76,6 @@ main {
     text-align: center;
     width: 220px;
     margin:10px;
-    display:flex;
     justify-content: space-between;
 }
 
@@ -596,7 +595,6 @@ button {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin:10px;
-    display:flex;
     justify-content: space-between;
 }
 
@@ -607,9 +605,6 @@ button {
     margin-bottom: 10px;
 }
 
-.game-item p {
-    flex-grow:1;
-}
 .buy-btn {
     background: #007BFF;
     color: white;
