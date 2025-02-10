@@ -80,10 +80,13 @@ main {
     border-radius: 5px;
 }
 
-#grid-item p {
+.grid-item p {
     font-size: 1em;
     color: #333;
     margin-top: 10px;
+}
+
+#grid-item a {
     text-decoration:none;
 }
 
@@ -616,10 +619,7 @@ button {
     margin-bottom: 20px;
 }
 @media (max-width: 600px) {
-    main {
-        display:flex;
-    }
-    nav {
+    #main-nav {
         display:flex;
     }
 }
