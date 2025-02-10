@@ -17,7 +17,7 @@ document.querySelector(".toggle-image").onclick = (event) => {
     console.log("Image Clicked!");
     const imgElement = event.target;
     const image1 = "https://fakeimg.pl/200x200/A6E3A1/909090";
-    const image2 = "https://fakeimg.pl/200x200/C9CBFF/909090";
+    const image2 = "https://fakeimg.pl/300x300/C9CBFF/909090";
 
     imgElement.src = imgElement.src.includes(image1) ? image2 : image1;
 };
