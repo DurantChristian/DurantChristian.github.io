@@ -75,6 +75,7 @@ main {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 220px;
+    justify-content: space-between;
 }
 
 .grid-item img {
@@ -592,6 +593,7 @@ button {
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
+    justify-content: space-between;
 }
 
 .game-item img {
