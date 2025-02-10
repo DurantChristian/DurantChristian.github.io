@@ -26,6 +26,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    display:flex;
 }
 
 header {
@@ -613,4 +614,9 @@ button {
     width: 200px;
     height: auto;
     margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+    man {
+        flex-direction: column;
+    }
 }
