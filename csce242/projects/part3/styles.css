@@ -48,13 +48,44 @@ main {
      align-items:center;
 }
 
+<!--citingimg-->
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+figcaption a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+figcaption a:hover {
+    text-decoration: underline;
+}
+
 <!--color-->
 .index-container, .dashboard-container, .shop-container, .order-container, .highlights-container, .notifications-container, .activity-container {
+    display: flex;
+    gap: 20px;
     background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 20px auto;
+    flex-wrap: wrap;
 }
 
 .about-section, .contact-section, .user-profiles, .user-details, .friends-list, .shop-items, .order-confirmation, .highlights-content, .notifications-list, .activity-list {
+    padding: 20px;
     background: #bbdefb;
+    border-radius: 8px;
 }
 
 h2 {
@@ -617,7 +648,6 @@ button {
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin:10px;
 }
 
 .game-item img {
