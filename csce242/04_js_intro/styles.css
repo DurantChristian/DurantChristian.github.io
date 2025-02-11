@@ -68,11 +68,19 @@ main {
     padding:5px;
 }
 
+.happy {
+    color:pink;
+}
+
 .sad {
     color:purple;
 }
 
 .hidden {
+    display:none;
+}
+
+.hide-small {
     display:none;
 }
 
@@ -123,6 +131,13 @@ main {
 }
 
 /* Navigation */
+#toggle-nav div {
+    width:25px;
+    height:2px;
+    background-color:var(--gallery-color);
+    margin:6px 0;
+}
+
 #sub-nav {
     position:absolute;
     top:0;
@@ -141,6 +156,7 @@ main {
 
 #main-nav li {
     background:var(--gallery-color);
+    font-size:1.5em;
 }
 
 #sub-nav li {
@@ -158,7 +174,7 @@ main {
 }
 
 #main-nav a:hover {
-    color:crimson;
+    color:var(--primary-color);
 }
 
 /* Typography */
@@ -170,14 +186,44 @@ footer p {
     text-align:center;
 }
 
-/* Larger screens */
-@media only screen and (min-width: 768px) { 
+
+/* Medium screens */
+@media only screen and (min-width: 800px) { 
     .columns {
         display:flex;
     }
 
+    .gallery {
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+
+    .examples {
+        flex-wrap:wrap;
+        justify-content:space-between;
+        margin:0;
+        padding:0;
+    }
+
+    .examples section {
+        max-width:30%;
+        padding:10px;
+        margin:0;
+    }
+
+    .examples section:nth-child( even ) {
+        background:var(--main-background-color);
+    }
+}
+/* Larger screens */
+@media only screen and (min-width: 1200px) { 
+    #toggle-nav {
+        display:none;
+    }
+
     #main-nav li {
         flex:1;
+        border-bottom:0;
     }
 
     #main-nav li:not(:last-child) {
@@ -213,5 +259,15 @@ footer p {
         position:absolute;
         padding:5px;
         bottom:0;
+    }
+
+    .examples section {
+        width:18%;
+        padding:10px;
+        margin:0;
+    }
+
+    .hide-small {
+        display:flex;
     }
 }
