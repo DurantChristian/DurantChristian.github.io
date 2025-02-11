@@ -339,6 +339,7 @@ button:hover {
     padding: 10px;
     text-align: center;
     margin-bottom: 20px;
+    width:100%;
 }
 
 .dashboard-container {
@@ -616,7 +617,7 @@ button {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     padding:20px;
-    justify-items: center;
+    margin:10px;
 }
 
 .game-item {
@@ -627,9 +628,6 @@ button {
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin:10px;
-    overflow:hidden;
-    justify-content: space-between;
 }
 
 .game-item img {
