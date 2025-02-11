@@ -28,6 +28,13 @@ nav ul li a {
     font-weight: bold;
 }
 
+#toggle-nav div {
+    width:25px;
+    height:2px;
+    background-color:var(--gallery-color);
+    margin:6px 0;
+}
+
 header {
     text-align: center;
     padding: 20px;
@@ -646,5 +653,9 @@ button {
     nav ul li {
         display: block;  
         margin: 10px 0;   
+    }
+
+    #toggle-nav {
+        display:none;
     }
 }

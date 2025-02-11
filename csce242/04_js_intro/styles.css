@@ -134,7 +134,7 @@ main {
 #toggle-nav div {
     width:25px;
     height:2px;
-    background-color:var(--gallery-color);
+    background-color:var(white);
     margin:6px 0;
 }
 
