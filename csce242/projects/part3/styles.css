@@ -2,11 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #e3f2fd;
 }
 
 nav {
-    background-color: #333;
+    background-color: #1565c0;
     padding: 10px;
     text-align: center;
 }
@@ -31,7 +31,7 @@ nav ul li a {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #444;
+    background-color: #1e88e5;
     color: white;
 }
 
@@ -47,6 +47,46 @@ main {
      justify-items:right;
      align-items:center;
 }
+
+<!--color-->
+.index-container, .dashboard-container, .shop-container, .order-container, .highlights-container, .notifications-container, .activity-container {
+    display: flex;
+    gap: 20px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+.about-section, .contact-section, .user-profiles, .user-details, .friends-list, .shop-items, .order-confirmation, .highlights-content, .notifications-list, .activity-list {
+    flex: 1;
+    padding: 20px;
+    background: #bbdefb;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #0d47a1;
+    text-align: center;
+}
+
+button {
+    background: #1e88e5;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0d47a1;
+}
+
 <!--mainpage-->
 .index-container {
     display: flex;
@@ -156,29 +196,22 @@ main {
     height: auto;
 }
 
-button {
-    background: #333;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-button:hover {
-    background: #555;
-}
-
-.contact-content {
-    max-width: 600px;
-    margin: 0 auto;
+.two-column-container {
+    display: flex;
+    gap: 20px;
     background: white;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
 }
 
-.contact-content form {
+.about-section, .contact-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-section form {
     display: flex;
     flex-direction: column;
 }
