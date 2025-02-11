@@ -50,22 +50,11 @@ main {
 
 <!--color-->
 .index-container, .dashboard-container, .shop-container, .order-container, .highlights-container, .notifications-container, .activity-container {
-    display: flex;
-    gap: 20px;
     background: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    margin: 20px auto;
-    flex-wrap: wrap;
 }
 
 .about-section, .contact-section, .user-profiles, .user-details, .friends-list, .shop-items, .order-confirmation, .highlights-content, .notifications-list, .activity-list {
-    flex: 1;
-    padding: 20px;
     background: #bbdefb;
-    border-radius: 8px;
 }
 
 h2 {
@@ -628,6 +617,7 @@ button {
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin:10px;
 }
 
 .game-item img {
