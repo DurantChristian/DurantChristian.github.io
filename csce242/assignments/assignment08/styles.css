@@ -46,9 +46,8 @@ input {
     cursor: pointer;
 }
 .heart {
-    width: 100px;
-    height: 100px;
-    background-color: white;
+    font-size: 50px;
+    color: white;
 }
 button {
     margin: 5px;

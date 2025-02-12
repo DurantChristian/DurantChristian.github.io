@@ -23,14 +23,14 @@ document.getElementById("transportInput").onkeyup = (event) => {
         img.src = "/csce242/assignments/assignment08/images/bike.png"; 
         img.src = "/csce242/assignments/assignment08/images/car.png";
         img.src = "/csce242/assignments/assignment08/images/scooter.png";
-        img.src = "/csce242/assignments/assignment08/images/skateboard.png"
+        img.src = "/csce242/assignments/assignment08/images/skateboard.png";
     } else {
         img.src = "";
     }
 };
 
 const changeHeartColor = (color) => {
-    document.getElementById("heart").style.backgroundColor = color;
+    document.getElementById("heart").style.color = color;
 };
 
 document.getElementById("btn-red").onclick = () => changeHeartColor("red");
