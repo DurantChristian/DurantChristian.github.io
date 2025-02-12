@@ -20,11 +20,12 @@ document.getElementById("transportInput").onkeyup = (event) => {
     const img = document.getElementById("transportImage");
     const validModes = ["bike", "scooter", "car", "skateboard"];
     if (validModes.includes(transport)) {
-        img.src = "/"; 
-        img.alt = `Image of a ${transport}`;
+        img.src = "/csce242/assignments/assignment08/images/bike.png"; 
+        img.src = "/csce242/assignments/assignment08/images/car.png";
+        img.src = "/csce242/assignments/assignment08/images/scooter.png";
+        img.src = "/csce242/assignments/assignment08/images/skateboard.png"
     } else {
         img.src = "";
-        img.alt = "";
     }
 };
 
