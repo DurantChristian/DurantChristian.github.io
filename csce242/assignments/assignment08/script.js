@@ -19,7 +19,13 @@ document.getElementById("transportInput").onkeyup = (event) => {
     const transport = event.currentTarget.value.toLowerCase();
     const img = document.getElementById("transportImage");
     const validModes = ["bike", "scooter", "car", "skateboard"];
-    img.src = validModes.includes(transport) ? `${transport}.png` : "";
+    if (validModes.includes(transport)) {
+        img.src = "/"; 
+        img.alt = `Image of a ${transport}`;
+    } else {
+        img.src = "";
+        img.alt = "";
+    }
 };
 
 const changeHeartColor = (color) => {
