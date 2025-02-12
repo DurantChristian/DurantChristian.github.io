@@ -47,6 +47,7 @@ input {
 }
 .heart {
     font-size: 50px;
+    display: block;
     color: white;
 }
 button {
