@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5e1;
+}
+.container {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+    border-radius: 10px;
+}
+input {
+    padding: 10px;
+    width: 80%;
+    margin-top: 10px;
+}
+.image-box, .heart-box {
+    margin-top: 20px;
+}
+.hidden {
+    display: none;
+}
+.nav {
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+.nav-items {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-items a {
+    text-decoration: none;
+    color: darkred;
+    display: block;
+    padding: 5px;
+}
+.nav-items a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.nav-toggle {
+    cursor: pointer;
+}
+.heart {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    clip-path: polygon(50% 15%, 100% 50%, 50% 100%, 0% 50%);
+    margin: auto;
+}
+button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
