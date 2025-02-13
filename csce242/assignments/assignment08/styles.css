@@ -35,8 +35,12 @@ input {
 .nav-items a {
     text-decoration: none;
     color: darkred;
-    display: block;
+    display: inline-block;
     padding: 5px;
+}
+.nav-items a:not(:last-child)::after {
+    content: " | ";
+    color: darkred;
 }
 .nav-items a:hover {
     cursor: pointer;
