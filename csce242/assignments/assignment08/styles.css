@@ -25,29 +25,34 @@ input {
 .nav {
     margin-bottom: 20px;
     cursor: pointer;
-    display: inline-block;
+    display: block;
+    text-align: center;
+}
+.nav-toggle {
+    display: none;
+    cursor: pointer;
 }
 .nav-items {
-    display: none;
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
 }
 .nav-items a {
     text-decoration: none;
     color: darkred;
-    display: inline-block;
     padding: 5px;
+    position: relative;
 }
 .nav-items a:not(:last-child)::after {
     content: " | ";
     color: darkred;
+    position: absolute;
+    right: -10px;
 }
 .nav-items a:hover {
     cursor: pointer;
     text-decoration: underline;
-}
-.nav-toggle {
-    cursor: pointer;
 }
 .heart {
     font-size: 50px;
@@ -58,4 +63,17 @@ button {
     margin: 5px;
     padding: 10px;
     cursor: pointer;
+}
+@media (max-width: 600px) {
+    .nav-toggle {
+        display: inline-block;
+    }
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-items.show {
+        display: flex;
+    }
 }

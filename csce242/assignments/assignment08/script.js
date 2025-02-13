@@ -1,8 +1,8 @@
 const toggleMenu = () => {
     const menu = document.getElementById("nav-items");
     const toggle = document.getElementById("toggle-nav");
-    menu.classList.toggle("hidden");
-    toggle.textContent = menu.classList.contains("hidden") ? "▼" : "▲";
+    menu.classList.toggle("show");
+    toggle.textContent = menu.classList.contains("show") ? "▼" : "▲";
 };
 
 const showSection = (section) => {
