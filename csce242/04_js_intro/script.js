@@ -80,5 +80,6 @@ document.getElementById("btn-up").onclick = () => {
 
 document.getElementById("btn-pick-color").onclick = (event) => {
     const color = event.currentTarget.value;
-    document.getWlementById("circle").style.setProperty("background", color);
+    //document.getWlementById("circle").style.setProperty("background", color);
+    document.getElementById("circle").style.setProperty("--circle-color", color);
 }
