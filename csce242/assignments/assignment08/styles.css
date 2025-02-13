@@ -63,6 +63,11 @@ input {
     display: block;
     color: white;
 }
+.img {
+    width:150px;
+    height:150px;
+    justify-content: center;
+}
 button {
     margin: 5px;
     padding: 10px;

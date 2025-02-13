@@ -43,3 +43,42 @@ document.getElementById("txt-emotion").onkeyup = (event) => {
 document.getElementById("toggle-nav").onclick = () => {
     document.getElementById("nav-items").classList.toggle("hide-small");
 };
+
+//show color message 
+document.getElementById("btn-choose-color").onclick = () => {
+    const color = document.getElementById("txt-color").value.toLowerCase().trim();
+    let mood = "";
+
+    if(color == "blue"){
+        mood = "grumpy";
+    } 
+    else if(color == "yellow"){
+        mood = "mellow";
+    }
+    else {
+        mood = "undefined";
+    }
+
+    
+    document.getElementById("color-message").innerHTML = 
+    `You chose ${color}. You are feeling ${mood}.`
+};
+
+let pos = 0;
+const changeCirclePos = (increment) => {
+    pos += increment;
+    document.getElementById("circle").style.setProperty("top", pos + "px");
+};
+
+document.getElementById("btn-down").onclick = () => {
+    changeCirclePos(10);
+}
+
+document.getElementById("btn-up").onclick = () => {
+    changeCirclePos(-10);
+}
+
+document.getElementById("btn-pick-color").onclick = (event) => {
+    const color = event.currentTarget.value;
+    document.getWlementById("circle").style.setProperty("background", color);
+}
