@@ -72,7 +72,7 @@ input {
     text-decoration: underline;
 }
 .heart {
-    font-size: 150px;
+    font-size: 100%;
     display: block;
     color: white;
 }
