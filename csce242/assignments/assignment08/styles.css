@@ -19,10 +19,8 @@ input {
 }
 .image-box, .heart-box {
     margin-top: 20px;
-}
-.image-box img, .heart-box .heart {
-    width: 150px;
-    height: 150px;
+    width:150px;
+    height:150px;
 }
 .hidden {
     display: none;
@@ -61,7 +59,7 @@ input {
     text-decoration: underline;
 }
 .heart {
-    font-size: 50px;
+    font-size: 150px;
     display: block;
     color: white;
 }
