@@ -3,7 +3,8 @@
     --main-background-color:#CDECEF;
     --primary-color:#2B91AD;
     --gallery-color:#FFB58A;
-    --circle-color:black;
+    --circle-color: black;
+    --donation-percent:0%;
 }
 
 body {
@@ -95,7 +96,6 @@ main {
 
 #ball-area {
     position:relative;
-    height:200px;
 }
 
 #ball, #circle {
@@ -111,6 +111,22 @@ main {
     animation-name: fun;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+}
+.error {
+    color:darkred;
+}
+
+/* Donations */
+#txt-donation {
+    max-width:40%;
+}
+
+#thermometer {
+    width:25%;
+    height:200px;
+    margin-right:10%;
+    border:2px solid var(--primary-color);
+    background:linear-gradient(0deg, red 0% var(--donation-percent), white var(--donation-percent) 100%);
 }
 
 @keyframes fun {
