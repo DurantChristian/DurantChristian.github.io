@@ -27,6 +27,7 @@ input {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    height:200px;
     width: 100%;
     padding-left: 20px;
 }
@@ -73,6 +74,8 @@ input {
 }
 .heart {
     font-size: 100%;
+    width:100%;
+    height:100%;
     display: block;
     color: white;
 }
