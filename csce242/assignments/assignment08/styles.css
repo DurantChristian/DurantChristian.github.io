@@ -69,6 +69,11 @@ input {
     display: block;
     color: white;
 }
+.img {
+    align-items: center;
+    width:150px;
+    height:150px;
+}
 button {
     margin: 5px;
     padding: 10px;
