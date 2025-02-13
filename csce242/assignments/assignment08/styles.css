@@ -13,7 +13,7 @@ body {
     border-radius: 10px;
 }
 .container button {
-    text-align:left;
+    justify-content:left;
     display:flex;
     flex-direction:row;
     gap:10px;
