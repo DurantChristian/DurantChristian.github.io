@@ -67,10 +67,8 @@ input {
     width:150px;
     height:auto;
     max-width:100%;
-}
-.image-box {
     display:flex;
-    justify-content:center;
+    justify-content: center;
 }
 button {
     margin: 5px;
