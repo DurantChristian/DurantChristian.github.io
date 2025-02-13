@@ -63,10 +63,14 @@ input {
     display: block;
     color: white;
 }
-.img {
+.image-box img {
     width:150px;
-    height:150px;
-    justify-content: center;
+    height:auto;
+    max-width:100%;
+}
+.image-box {
+    display:flex;
+    justify-content:center;
 }
 button {
     margin: 5px;
