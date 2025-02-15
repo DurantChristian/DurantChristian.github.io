@@ -103,12 +103,17 @@ button:hover {
 }
 
 .grid-item {
+    display:flex;
+    flex-direction: column;
     background: white;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
+    align-items:center;
+    justify-content: center;
     width: 220px;
+    min-height:250px;
     margin:10px;
 }
 
