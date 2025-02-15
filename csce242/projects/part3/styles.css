@@ -693,8 +693,8 @@ button {
 
 @media (min-width: 900px) {
     #nav-items {
-        display:flex;
-        flex-direction: column; 
+        display:flex !important;
+        flex-direction: row; 
         align-items: center; 
         background: white;
         top: 50px;
