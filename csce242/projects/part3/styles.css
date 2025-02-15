@@ -652,7 +652,7 @@ button {
 #toggle-nav {
     width: 30px;
     height: 25px;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
