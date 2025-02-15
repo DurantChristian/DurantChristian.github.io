@@ -669,6 +669,23 @@ button {
     list-style: none;
     display: flex;
     gap: 15px;
+    position:absolute;
+}
+
+.nav-items a {
+    border-bottom:2px solid transparent;
+}
+
+.nav-items a:hover {
+    border-bottom:2px solid white;
+}
+
+.secondary-nav a {
+    border-bottom:2px solid transparent;
+}
+
+.secondary-nav a:hover {
+    border-bottom:2px solid white;
 }
 
 .hidden {
@@ -694,5 +711,29 @@ button {
 
     #toggle-nav {
         display:none; 
+    }
+}
+
+@media (max-width: 768px) {
+    #nav-items {
+        flex-direction: column; 
+        align-items: center; 
+        background: white;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    #secondary-nav {
+        flex-direction: column; 
+        align-items: center; 
+        background: white;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
     }
 }
