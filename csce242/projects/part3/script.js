@@ -1,5 +1,6 @@
 //toggling the nav
-document.getElementById("toggle-nav").addEventListener("click", function() {
+const toggleMenu = () => {
     const menu = document.getElementById("nav-items");
-    menu.classList.toggle("hidden");
-});
+    menu.classList.toggle("show");
+};
+document.getElementById("toggle-nav").onclick = toggleMenu;
