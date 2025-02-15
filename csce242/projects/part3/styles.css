@@ -729,6 +729,7 @@ button {
     }
 
     #nav-items, .secondary-nav ul {
+        display:flex !important;
         flex-direction: column;
         width: 100%;
         text-align: center;
