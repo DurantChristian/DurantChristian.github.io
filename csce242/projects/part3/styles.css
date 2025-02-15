@@ -724,7 +724,7 @@ button {
     nav, .secondary-nav {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: left;
         width: 100%;
     }
 
@@ -732,7 +732,7 @@ button {
         display:flex !important;
         flex-direction: column;
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
 
     #nav-items li, .secondary-nav ul li {
