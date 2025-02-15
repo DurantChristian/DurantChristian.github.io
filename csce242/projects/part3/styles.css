@@ -731,10 +731,6 @@ button {
         padding: 10px;
     }
 
-    #toggle-nav {
-        display:none;
-    }
-
     nav ul {
         flex-direction: column;
         width: 100%;
