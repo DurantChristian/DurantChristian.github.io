@@ -658,16 +658,11 @@ button {
     cursor: pointer;
 }
 
-.hidden {
-    display:none;
-}
-
 #toggle-nav div {
     width:25px;
     height:2px;
     background:white;
     margin:6px 0;
-    display:none;
 }
 
 .nav-items {
@@ -676,33 +671,17 @@ button {
     gap: 15px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 900px) {
+    #nav-items {
+        display:flex;
+    }
+
+    #nav-items a {
+        border-bottom:2px solid transparent;
+    }
 
     #toggle-nav {
-        display: flex;
-    }
-
-    #toggle-nav div {
-        width:25px;
-        height:2px;
-        background:white;
-        margin:6px 0;
-    }
-
-    #nav-items {
-        display: flex;
-        flex-direction: column;
-        background: white;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        padding: 10px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    #nav-items.show {
-        display: flex;
+        display:none;
     }
 
     .dashboard-container {
