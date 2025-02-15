@@ -680,25 +680,15 @@ button {
         border-bottom:2px solid transparent;
     }
 
+    #nav-items a:hover {
+        border-bottom:2px solid white;
+    }
+
+    #nav-items li {
+        flex:1;
+    }
+
     #toggle-nav {
-        display:none;
-    }
-
-    .dashboard-container {
-        flex-direction: column;
-        align-items: center;     
-        gap: 10px;               
-    }
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;     
-        padding: 0;
-        margin: 0;
-    }
-
-    nav ul li {
-        display: block;  
-        margin: 10px 0;   
+        display:none; 
     }
 }
