@@ -671,6 +671,10 @@ button {
     gap: 15px;
 }
 
+.hidden {
+    display:none;
+}
+
 @media (min-width: 900px) {
     #nav-items {
         display:flex;
