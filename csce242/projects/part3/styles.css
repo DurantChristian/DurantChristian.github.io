@@ -667,6 +667,7 @@ button {
     height:2px;
     background:white;
     margin:6px 0;
+    display:none;
 }
 
 .nav-items {
@@ -698,6 +699,10 @@ button {
         width: 100%;
         padding: 10px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #nav-items.show {
+        display: flex;
     }
 
     .dashboard-container {
