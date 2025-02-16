@@ -108,6 +108,6 @@ button {
         display: flex;
     }
     .nav-items a:not(:last-child)::after {
-        display:none;
+        content: none;
     }
 }
