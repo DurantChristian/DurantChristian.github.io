@@ -722,7 +722,7 @@ main.order-container {
 }
 
 .order-img {
-    max-width: 100%;
+    max-width: 250px;
     height: auto;
     margin-bottom: 20px;
     display:block;
