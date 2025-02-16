@@ -6,12 +6,16 @@
 </head>
 <body>
     <nav>
-        <ul>
+        <div id="toggle-nav">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="nav-items" class="hidden">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
             <li><a href="shop.html">Shop</a></li>
             <li><a href="reviews.html">Game Reviews</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about&contact.html">About & Contact</a></li>
             <li><a href="dashboard.html">User Dashboard</a></li>
         </ul>
     </nav>
@@ -38,21 +42,28 @@
         <section class="game-reviews">
             <h2>Latest Game Reviews</h2>
             <div class="review">
+                <a href="https://image.api.playstation.com/vulcan/ap/rnd/202211/0711/kh4MUIuMmHlktOHar3lVl6rY.png">
+                <img src="/csce242/projects/part4/images/witcher3.png" alt="The Witcher 3"></a>
                 <h3>The Witcher 3</h3>
                 <p>An epic fantasy role-playing game with a rich storyline and immersive gameplay.</p>
                 <a href="gamereview.html">Read More</a>
             </div>
             <div class="review">
+                <a href="https://th.bing.com/th/id/OIP.VuiE5FTU5oGpkPFpB219MAHaJP?w=202&h=253&c=7&r=0&o=5&dpr=2&pid=1.7">
+                <img src="/csce242/projects/part4/images/callofduty.png" alt="Call Of Duty"></a>
                 <h3>Call of Duty</h3>
                 <p>A fast-paced first-person shooter that offers thrilling multiplayer experiences.</p>
                 <a href="#">Read More</a>
             </div>
             <div class="review">
+                <a href="https://th.bing.com/th/id/OIP.4TnaxXC6nGhzKiqy8ddkzgHaHa?w=178&h=180&c=7&r=0&o=5&dpr=2&pid=1.7">
+                <img src="/csce242/projects/part4/images/portal2.png" alt="Portal 2"></a>
                 <h3>Portal 2</h3>
                 <p>A mind-bending puzzle game that challenges your problem-solving abilities with humor.</p>
                 <a href="#">Read More</a>
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

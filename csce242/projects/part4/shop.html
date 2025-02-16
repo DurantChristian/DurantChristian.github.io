@@ -6,12 +6,16 @@
 </head>
 <body>
     <nav>
-        <ul>
+        <div id="toggle-nav">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="nav-items" class="hidden">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
             <li><a href="shop.html">Shop</a></li>
             <li><a href="reviews.html">Game Reviews</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about&contact.html">About & Contact</a></li>
             <li><a href="dashboard.html">User Dashboard</a></li>
         </ul>
     </nav>
@@ -28,12 +32,14 @@
             </ul>
         </nav>
         
-        <img src="https://place-hold.it/300x300/ddd" alt="Featured Game" class="featured-img">
+        <a href="https://th.bing.com/th/id/OIP.YwK20X8_XASiPvJk1ZmsUgAAAA?rs=1&pid=ImgDetMain">
+        <img src="/csce242/projects/part4/images/gameshop.png" alt="Featured Game" class="featured-img"></a>
         
         <h2>Hot Games</h2>
         <div class="games-grid">
             <div class="game-item">
-                <img src="https://place-hold.it/150x150/ddd" alt="Game">
+                <a href="https://image.api.playstation.com/vulcan/ap/rnd/202211/0711/kh4MUIuMmHlktOHar3lVl6rY.png">
+                <img src="/csce242/projects/part4/images/witcher3.png" alt="Game"></a>
                 <p><strong>The Witcher 3</strong></p>
                 <p>Best RPG</p>
                 <p>Explore a vast open world</p>
@@ -43,7 +49,8 @@
             </div>
             
             <div class="game-item">
-                <img src="https://place-hold.it/150x150/ddd" alt="Game">
+                <a href="https://gamefaqs.gamespot.com/a/box/7/2/6/986726_front.jpg">
+                <img src="/csce242/projects/part4/images/cyberpunk.png" alt="Game"></a>
                 <p><strong>Cyberpunk 2077</strong></p>
                 <p>Futuristic RPG</p>
                 <p>Experience Night City</p>
@@ -51,7 +58,8 @@
             </div>
             
             <div class="game-item">
-                <img src="https://place-hold.it/150x150/ddd" alt="Game">
+                <a href="https://th.bing.com/th/id/OIP.J73lWAjQJieXfS4ji05wXwHaNK?w=115&h=180&c=7&r=0&o=5&dpr=2&pid=1.7">
+                <img src="/csce242/projects/part4/images/reddead.png" alt="Game"></a>
                 <p><strong>Red Dead Redemption 2</strong></p>
                 <p>Action Adventure</p>
                 <p>Live the cowboy experience</p>
@@ -59,7 +67,8 @@
             </div>
             
             <div class="game-item">
-                <img src="https://place-hold.it/150x150/ddd" alt="Game">
+                <a href="https://th.bing.com/th/id/OIP.yJirbyWKnLNEVvWDciCxPQAAAA?w=155&h=220&c=7&r=0&o=5&dpr=2&pid=1.7">
+                <img src="/csce242/projects/part4/images/eldenring.png" alt="Game"></a>
                 <p><strong>Elden Ring</strong></p>
                 <p>Epic Fantasy</p>
                 <p>Unravel a dark and mysterious world</p>
@@ -67,7 +76,8 @@
             </div>
 
             <div class="game-item">
-                <img src="https://place-hold.it/150x150/ddd" alt="Game">
+                <a href="https://th.bing.com/th/id/OIP.HGuBxCatUjcqZkOxEBb1RwHaHa?w=150&h=180&c=7&r=0&o=5&dpr=2&pid=1.7">
+                <img src="/csce242/projects/part4/images/frozen.png" alt="Game"></a>
                 <p><strong>Frozen</strong></p>
                 <p>Adventure</p>
                 <p>Become a princess</p>
@@ -75,7 +85,8 @@
             </div>
 
             <div class="game-item">
-                <img src="https://place-hold.it/150x150/ddd" alt="Game">
+                <a href="https://th.bing.com/th/id/OIP.XuuZ9U8X2G2ENh2t1380GwHaEK?w=318&h=180&c=7&r=0&o=5&dpr=2&pid=1.7">
+                <img src="/csce242/projects/part4/images/gamble.png" alt="Game"></a>
                 <p><strong>Casino</strong></p>
                 <p>Gamble</p>
                 <p>Make lots of money</p>
@@ -83,23 +94,26 @@
             </div>
 
             <div class="game-item">
-                <img src="https://place-hold.it/150x150/ddd" alt="Game">
-                <p><strong>Sims</strong></p>
+                <a href="https://th.bing.com/th/id/OIP.OTfX_Ps333yQWE_mIBqeiQHaHa?w=202&h=202&c=7&r=0&o=5&dpr=2&pid=1.7">
+                <img src="/csce242/projects/part4/images/sims.png" alt="Game"></a>
+                <p><strong>Sims 4</strong></p>
                 <p>An open world action</p>
                 <p>Live your dreams</p>
                 <button class="buy-btn">Buy Now</button>
             </div>
 
             <div class="game-item">
-                <img src="https://place-hold.it/150x150/ddd" alt="Game">
-                <p><strong>Nascar</strong></p>
+                <a href="https://th.bing.com/th/id/OIP.QHz6W2Doi9G8obm02tytoAHaIp?w=154&h=180&c=7&r=0&o=5&dpr=2&pid=1.7">
+                <img src="/csce242/projects/part4/images/nascar.png" alt="Game"></a>
+                <p><strong>Nascar Heat 3</strong></p>
                 <p>An open world action</p>
                 <p>Become a racing champion</p>
                 <button class="buy-btn">Buy Now</button>
             </div>
 
             <div class="game-item">
-                <img src="https://place-hold.it/150x150/ddd" alt="Game">
+                <a href="https://th.bing.com/th/id/OIP.q3f8gyBPvNpIXNxDrrKJfgHaLH?w=121&h=182&c=7&r=0&o=5&dpr=2&pid=1.7">
+                <img src="/csce242/projects/part4/images/minecraft.png" alt="Game"></a>
                 <p><strong>Minecraft</strong></p>
                 <p>Creative sandbox</p>
                 <p>Build your own world</p>
@@ -107,7 +121,8 @@
             </div>
 
             <div class="game-item">
-                <img src="https://place-hold.it/150x150/ddd" alt="Game">
+                <a href="https://th.bing.com/th/id/OIP.-d1p2Hl7wIaVAbXcnwAi8gHaHa?w=178&h=180&c=7&r=0&o=5&dpr=2&pid=1.7">
+                <img src="/csce242/projects/part4/images/fortnitecover.png" alt="Game"></a>
                 <p><strong>Fortnite</strong></p>
                 <p>Action pack</p>
                 <p>Join your friends in action</p>
@@ -116,5 +131,6 @@
             
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
