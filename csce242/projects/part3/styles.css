@@ -96,28 +96,24 @@ button:hover {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     gap: 20px;
     padding: 20px;
-    justify-items: center;
-    align-items:center;
-    box-sizing:border-box;
+    justify-items: center; 
+    align-items: center; 
+    box-sizing: border-box;
 }
 
 .grid-item {
-    display:flex;
-    flex-direction: column;
     background: white;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    align-items:center;
-    justify-content: center;
     width: 100%;
-    min-height:250px;
-    margin:10px;
-    box-sizing:border-box;
+    min-height: 250px;
+    margin: 10px;
+    box-sizing: border-box;
 }
 
 .grid-item img {
