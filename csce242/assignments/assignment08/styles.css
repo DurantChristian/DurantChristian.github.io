@@ -107,4 +107,7 @@ button {
     .nav-items.show {
         display: flex;
     }
+    .nav-items a:not(:last-child)::after {
+        display:none;
+    }
 }
