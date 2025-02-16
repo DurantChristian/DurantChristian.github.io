@@ -121,7 +121,7 @@ button:hover {
 
 .grid-item img {
     width: 100%;
-    height: auto;
+    height: 200px;
     object-fit:contain;
     border-radius: 5px;
 }
@@ -395,7 +395,7 @@ form {
 
 .user-profiles, .user-details, .friends-list {
     flex: 1;
-    background: #e3f2fd;
+    background: white;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -682,7 +682,7 @@ button {
 
 .game-item img {
     width: 100%;
-    height: auto;
+    height: 200px;
     object-fit:contain;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -786,16 +786,35 @@ button {
         width: 100%;
     }
 
-    #nav-items, #secondary-nav ul {
-        display:flex !important;
+    #nav-items {
+        display:none;
         flex-direction: column;
         width: 100%;
         text-align: left;
     }
 
+    #nav-items.hidden {
+        display:flex;
+    }
+
+    #secondary-nav ul {
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        text-align:left;
+    }
+
     #nav-items li, #secondary-nav ul li {
         width: 100%;
         padding: 10px 0;
+    }
+
+    #toggle-nav {
+        display: block;
+        color: white;
+        padding: 10px;
+        text-align: left;
+        width: 100%;
     }
 
     #two-column-container {
