@@ -100,6 +100,7 @@ button:hover {
     gap: 20px;
     padding: 20px;
     justify-items: center;
+    box-sizing:border-box;
 }
 
 .grid-item {
@@ -111,10 +112,11 @@ button:hover {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     align-items:center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     height:auto;
     margin:10px;
+    box-sizing:border-box;
 }
 
 .grid-item img {
@@ -617,6 +619,7 @@ button {
     gap: 20px;
     padding:20px;
     margin:10px;
+    box-sizing:border-box;
 }
 
 .game-item {
@@ -629,8 +632,9 @@ button {
     height:auto;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
+    box-sizing:border-box;
 }
 
 .game-item img {
