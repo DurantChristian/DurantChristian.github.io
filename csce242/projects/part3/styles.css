@@ -114,7 +114,7 @@ button:hover {
     align-items:center;
     justify-content: center;
     width: 100%;
-    min-height:250px;
+    height:250px;
     height:100%;
     margin:10px;
     box-sizing:border-box;
@@ -208,6 +208,7 @@ button:hover {
 
 .two-column-container {
     display: flex;
+    flex-wrap:wrap;
     gap: 20px;
     background: white;
     padding: 20px;
@@ -217,14 +218,18 @@ button:hover {
 }
 
 .about-section, .contact-section {
-    display:flex;
-    flex-direction:column;
+    flex: 1;
+    min-width: 300px; 
+    background: white;
     padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .contact-section form {
     display: flex;
     flex-direction: column;
+    gap:10px;
 }
 
 .contact-content label {
@@ -257,7 +262,8 @@ button:hover {
 }
 
 .contact-info, .faq {
-    max-width: 600px;
+    flex:1;
+    max-width: 300px;
     margin: 20px auto;
     background: white;
     padding: 20px;
@@ -269,6 +275,14 @@ button:hover {
     margin: 10px 0;
     list-style-type:none;
 }
+
+.contact-info img {
+    width: 100%; 
+    max-width: 250px; 
+    display: block;
+    margin: 10px auto;
+}
+
 .reviews-search input {
     width: 100%;
     padding: 10px;
@@ -360,6 +374,7 @@ button:hover {
 
 .dashboard-container {
     display: flex;
+    flex-wrap:wrap;
     justify-content: space-between;
     gap: 20px;
     padding: 20px;
@@ -367,7 +382,7 @@ button:hover {
 
 .user-profiles, .user-details, .friends-list {
     flex: 1;
-    background: white;
+    background: #e3f2fd;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -644,7 +659,7 @@ button {
     padding: 10px;
     margin:10px;
     width:100%;
-    min-height:250px;
+    height:250px;
     height:100%;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -753,7 +768,7 @@ button {
 
 @media (max-width: 768px) {
     nav, .secondary-nav {
-        display: flex;
+        display: flex !important;
         flex-direction: column;
         align-items: left;
         width: 100%;
@@ -769,5 +784,13 @@ button {
     #nav-items li, .secondary-nav ul li {
         width: 100%;
         padding: 10px 0;
+    }
+
+    .two-column-container {
+        flex-direction: column;
+    }
+
+    .dashboard-container {
+        flex-direction: column;
     }
 }
