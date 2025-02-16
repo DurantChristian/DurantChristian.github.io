@@ -114,7 +114,8 @@ button:hover {
     align-items:center;
     justify-content: center;
     width: 100%;
-    height:auto;
+    min-height:250px;
+    height:100%;
     margin:10px;
     box-sizing:border-box;
 }
@@ -592,7 +593,7 @@ button {
 }
 <!--shop-->
 .shop-container {
-    background: white;
+    background: #e3f2fd;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -629,7 +630,8 @@ button {
     padding: 10px;
     margin:10px;
     width:100%;
-    height:auto;
+    min-height:250px;
+    height:100%;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     justify-content: center;
