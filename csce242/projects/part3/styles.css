@@ -58,7 +58,7 @@ main {
     background: #e3f2fd;
 }
 
-.about-section, .contact-section, .user-profiles, .user-details, .friends-list, .shop-items, .order-confirmation, .highlights-content, .activity-list {
+.about-section, .contact-section, .user-profiles, .user-details, .friends-list, .shop-items, .order-confirmation, .activity-list {
     background: #bbdefb;
 }
 
@@ -618,6 +618,7 @@ button {
     align-items: center;
     text-align: left;
     gap: 20px;
+    background:white;
 }
 
 .highlights-img {
