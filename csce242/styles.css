@@ -37,29 +37,11 @@ body {
     font-weight:600;
 }
 
-.assignments {
-    display: flex;
-    justify-content:center;
-    text-decoration:none;
-    gap:20px;
-}
-
 .assignment a, .project a {
     display:block;
     text-decoration:none;
     width:100%;
     height:100%;
-}
-
-.assignment {
-    background-color:#004d80;
-    padding:15px;
-    width:300px;
-    text-decoration:none;
-    border-radius:5px;
-    text-align:center;
-    box-shadow:2px 2px 10px rgba(0, 0, 0, 0.1);
-    transition:transform 0.3s ease, background-color 0.3s ease;
 }
 
 .assignment h3 {
@@ -101,6 +83,7 @@ h2 {
     background-color:#004d80;
     padding:15px;
     width:300px;
+    height:auto;
     border-radius:5px;
     text-align:center;
     box-shadow:2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -118,7 +101,7 @@ h2 {
     height:auto;
     max-height:150px;
     border-radius:5px;
-    object-fit:cover;
+    object-fit:contain;
 }
 
 .assignment:hover, .project:hover {
@@ -128,16 +111,17 @@ h2 {
 @media (max-width: 768px) {
     .assignments, .projects {
         flex-direction: row;  
-        align-items: flex-start;
+        align-items: center;
     }
 
     .assignment, .project {
-        max-width: 300px; 
+        max-width: 300px;
+        height:auto; 
         text-decoration: none;
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 900px) {
     .assignments, .projects {
         flex-direction: column;  
         align-items: center;     
@@ -145,6 +129,7 @@ h2 {
 
     .assignment, .project {
         max-width: 300px;
+        height:auto;
         text-decoration: none;
     }
 }
