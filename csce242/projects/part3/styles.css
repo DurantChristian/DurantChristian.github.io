@@ -701,18 +701,23 @@ button {
 }
 <!--order-->
 .order-container {
+    display:flex;
+    flex-direction:column;
     background: white;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 400px;
+    align-items:center;
+    justify-content:center;
 }
 
 .order-img {
-    width: 200px;
+    max-width: 100%;
     height: auto;
     margin-bottom: 20px;
+    display:block;
 }
 <!--toggle-->
 #toggle-nav {
