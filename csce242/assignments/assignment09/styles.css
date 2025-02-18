@@ -16,7 +16,7 @@ body {
     border-right: 5px solid black;
     margin: 20px auto;
 }
-.rung {
+.rung, .stair {
     width: 100%;
     height: 5px;
     background-color: black;

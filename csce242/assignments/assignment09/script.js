@@ -10,6 +10,11 @@ document.getElementById("drawLadder").addEventListener("click", () => {
         rung.className = "rung";
         rung.style.bottom = (i * 25) + "px";
         ladder.appendChild(rung);
+        
+        let stair = document.createElement("div");
+        stair.className = "stair";
+        stair.style.bottom = (i * 25 + 12) + "px";
+        ladder.appendChild(stair);
     }
     
     let stickFigure = document.getElementById("stickFigure");
