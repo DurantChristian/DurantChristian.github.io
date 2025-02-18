@@ -28,7 +28,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     transition: 0.5s;
-    display: block;
+    display: none;
     bottom: 12px;
 }
 #controls {
@@ -37,5 +37,5 @@ body {
 }
 #author {
     transition: 0.5s;
-    display: block;
+    display: none;
 }
