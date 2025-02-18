@@ -30,6 +30,7 @@ body {
     transition: 0.5s;
     display: none;
     bottom: 12px;
+    width:50px;
 }
 #controls {
     display: none;
@@ -37,5 +38,5 @@ body {
 }
 #author {
     transition: 0.5s;
-    display: none;
+    display: block;
 }
