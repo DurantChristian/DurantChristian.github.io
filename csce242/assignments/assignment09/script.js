@@ -1,9 +1,9 @@
-document.getElementById("drawStairs").addEventListener("click", () => {
+document.getElementById("drawLadder").addEventListener("click", () => {
     let container = document.getElementById("container");
     container.innerHTML = "";
-    let stair = document.createElement("div");
-    stair.className = "stair";
-    container.appendChild(stair);
+    let ladder = document.createElement("div");
+    ladder.className = "ladder";
+    container.appendChild(ladder);
     
     for (let i = 0; i < 10; i++) {
         let rung = document.createElement("div");
@@ -15,10 +15,10 @@ document.getElementById("drawStairs").addEventListener("click", () => {
     let stickFigure = document.getElementById("stickFigure");
     stickFigure.style.display = "block";
     stickFigure.style.bottom = "0px";
-    document.getElementById("climbStairs").style.display = "block";
+    document.getElementById("climbLadder").style.display = "block";
 });
 
-document.getElementById("climbStairs").addEventListener("click", () => {
+document.getElementById("climbLadder").addEventListener("click", () => {
     let stickFigure = document.getElementById("stickFigure");
     let position = 0;
     let step = 25;
