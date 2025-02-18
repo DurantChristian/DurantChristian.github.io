@@ -17,12 +17,16 @@ document.getElementById("drawLadder").addEventListener("click", () => {
         ladder.appendChild(stair);
     }
     
-    let stickFigure = document.getElementById("stickFigure");
-    container.appendChild(stickFigure);
-    stickFigure.style.bottom = "12px";
-    document.getElementById("controls").style.display = "block";
-    document.getElementById("author").style.marginTop = "10px";
-    document.getElementById("controls").appendChild(document.getElementById("author"));
+    let stickFigure = document.getElementById("img");
+    stickFigure.src = "/csce242/assignments/assignment09/images/left.png";
+            stickFigure.style.width = "50px";
+            stickFigure.style.position = "absolute";
+            stickFigure.style.left = "50%";
+            stickFigure.style.transform = "translateX(-50%)";
+            stickFigure.style.bottom = "12px";
+            container.appendChild(stickFigure);
+            document.getElementById("controls").style.display = "block";
+            document.getElementById("author").style.display = "none";
 });
 
 document.getElementById("climbLadder").addEventListener("click", () => {

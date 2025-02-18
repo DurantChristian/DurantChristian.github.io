@@ -37,4 +37,5 @@ body {
 }
 #author {
     transition: 0.5s;
+    display: block;
 }
