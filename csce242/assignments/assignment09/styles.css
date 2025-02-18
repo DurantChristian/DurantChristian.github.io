@@ -28,4 +28,13 @@ body {
     left: 50%;
     transform: translateX(-50%);
     transition: 0.5s;
+    display: block;
+    bottom: 12px;
+}
+#controls {
+    display: none;
+    margin-top: 10px;
+}
+#author {
+    transition: 0.5s;
 }
