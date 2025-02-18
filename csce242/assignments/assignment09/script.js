@@ -9,12 +9,19 @@ document.getElementById("drawLadder").addEventListener("click", () => {
         let rung = document.createElement("div");
         rung.className = "rung";
         rung.style.bottom = (i * 25) + "px";
+        rung.style.position = "absolute";
         ladder.appendChild(rung);
     }
     
-    let stickFigure = document.getElementById("stickFigure");
-            container.appendChild(stickFigure);
+    stickFigure.id = "stickFigure";
+            stickFigure.src = "/csce242/assignments/assignment09/images/left.png";
+            stickFigure.style.width = "50px";
+            stickFigure.style.position = "absolute";
+            stickFigure.style.left = "50%";
+            stickFigure.style.transform = "translateX(-50%)";
+            stickFigure.style.bottom = "12px";
             stickFigure.style.display = "block";
+            container.appendChild(stickFigure);
             
             document.getElementById("controls").style.display = "block";
             document.getElementById("author").style.display = "none";
