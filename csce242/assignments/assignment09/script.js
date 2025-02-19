@@ -1,13 +1,17 @@
 document.getElementById("drawStairs").addEventListener("click", () => {
     let container = document.getElementById("container");
-    container.innerHTML = "";
-    for (let i = 0; i < 10; i++) {
-        let stair = document.createElement("div");
-        stair.className = "stair";
-        stair.style.bottom = (i * 25) + "px";
-        stair.style.position = "absolute";
-        stair.appendChild(stair);
-    }
+            container.innerHTML = "";
+            let ladder = document.createElement("div");
+            ladder.className = "ladder";
+            container.appendChild(ladder);
+            
+            for (let i = 0; i < 10; i++) {
+                let stair = document.createElement("div");
+                stair.className = "stair";
+                stair.style.bottom = (i * 25) + "px";
+                stair.style.position = "absolute";
+                stair.appendChild(stair);
+            }
     let stickFigure = document.getElementById("stickFigure");
     stickFigure.style.display = "block";
     stickFigure.style.bottom = "0px";
