@@ -4,7 +4,9 @@ document.getElementById("drawStairs").addEventListener("click", () => {
     for (let i = 0; i < 10; i++) {
         let stair = document.createElement("div");
         stair.className = "stair";
-        container.appendChild(stair);
+        stair.style.bottom = (i * 25) + "px";
+        stair.style.position = "absolute";
+        stair.appendChild(stair);
     }
     let stickFigure = document.getElementById("stickFigure");
     stickFigure.style.display = "block";
