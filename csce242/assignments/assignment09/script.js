@@ -14,13 +14,13 @@ document.getElementById("drawStairs").addEventListener("click", () => {
             }
     let stickFigure = document.getElementById("stickFigure");
     stickFigure.style.display = "block";
-    stickFigure.style.bottom = "12px";
+    stickFigure.style.bottom = "262px";
     document.getElementById("climbStairs").style.display = "block";
 });
 
 document.getElementById("climbStairs").addEventListener("click", () => {
     let stickFigure = document.getElementById("stickFigure");
-    let position = 12;
+    let position = 262;
     let step = 25;
     let maxPosition = step * 10;
     let images = ["/csce242/assignments/assignment09/images/left.png", "/csce242/assignments/assignment09/images/right.png"];
