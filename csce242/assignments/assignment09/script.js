@@ -10,7 +10,7 @@ document.getElementById("drawStairs").addEventListener("click", () => {
                 stair.className = "stair";
                 stair.style.bottom = (i * 25) + "px";
                 stair.style.position = "absolute";
-                stair.appendChild(stair);
+                ladder.appendChild(stair);
             }
     let stickFigure = document.getElementById("stickFigure");
     stickFigure.style.display = "block";
