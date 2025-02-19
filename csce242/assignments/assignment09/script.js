@@ -21,8 +21,8 @@ document.getElementById("drawStairs").addEventListener("click", () => {
 document.getElementById("climbStairs").addEventListener("click", () => {
     let stickFigure = document.getElementById("stickFigure");
     let position = 262;
-    let step = 15;
-    let maxPosition = step * 5;
+    let step = 40;
+    let maxPosition = 315;
     let images = ["/csce242/assignments/assignment09/images/left.png", "/csce242/assignments/assignment09/images/right.png"];
     let imgIndex = 0;
     
