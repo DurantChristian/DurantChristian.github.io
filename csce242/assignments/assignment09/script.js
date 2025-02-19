@@ -1,17 +1,11 @@
 document.getElementById("drawStairs").addEventListener("click", () => {
     let container = document.getElementById("container");
     container.innerHTML = "";
-    let stair = document.createElement("div");
-    stair.className = "stair";
-    container.appendChild(stair);
-    
     for (let i = 0; i < 10; i++) {
-        let rung = document.createElement("div");
-        rung.className = "rung";
-        rung.style.bottom = (i * 25) + "px";
-        ladder.appendChild(rung);
+        let stair = document.createElement("div");
+        stair.className = "stair";
+        container.appendChild(stair);
     }
-    
     let stickFigure = document.getElementById("stickFigure");
     stickFigure.style.display = "block";
     stickFigure.style.bottom = "0px";
@@ -23,7 +17,7 @@ document.getElementById("climbStairs").addEventListener("click", () => {
     let position = 0;
     let step = 25;
     let maxPosition = step * 10;
-    let images = ["csce242/assignments/assignment09/images/left.png", "csce242/assignments/assignment09/images/right.png"];
+    let images = ["/csce242/assignments/assignment09/images/left.png", "/csce242/assignments/assignment09/images/right.png"];
     let imgIndex = 0;
     
     let interval = setInterval(() => {
