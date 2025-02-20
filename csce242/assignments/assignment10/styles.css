@@ -15,9 +15,6 @@ h2 {
     margin: 5px 0;
     font-size: 18px;
 }
-.title:hover {
-    text-decoration: underline;
-}
 .popup {
     position: fixed;
     top: 50%;
