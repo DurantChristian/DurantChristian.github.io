@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f2;
+}
+h1 {
+    color: #5a6b6b;
+}
+h2 {
+    color: #e57373;
+}
+.title {
+    color: #5a6b6b;
+    cursor: pointer;
+    margin: 5px 0;
+    font-size: 18px;
+}
+.title:hover {
+    text-decoration: underline;
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff5e6;
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: none;
+    width: 300px;
+}
+.popup img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+.popup h3 {
+    color: #e57373;
+    margin-top: 0;
+}
+.close-btn {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 18px;
+    cursor: pointer;
+    float: right;
+}
+.attribution {
+    margin-top: 20px;
+    font-size: 14px;
+}
+.attribution span {
+    color: #e57373;
+}
+.attribution .underline {
+    text-decoration: underline;
+}
