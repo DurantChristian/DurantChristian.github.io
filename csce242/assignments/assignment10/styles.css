@@ -32,7 +32,7 @@ h2 {
 }
 .popup img {
     max-width: 100%;
-    height: auto;
+    height: 120px;
     display: block;
     margin: 10px auto;
 }
@@ -57,4 +57,5 @@ h2 {
 }
 .attribution .underline {
     text-decoration: underline;
+    color:black;
 }
