@@ -6,6 +6,7 @@ body {
 #container {
     margin: auto;
     width: 200px;
+    position:relative;
 }
 .stair {
     width: 100%;
@@ -27,7 +28,18 @@ body {
     left: 50%;
     transform: translateX(-50%);
     transition: 0.5s;
+    display:none;
+    bottom:25px;
+    width:50px;
 }
 button {
     justify-content: center;
+}
+#climbStairs {
+    margin-top:10px;
+    display:none;
+}
+#author {
+    margin-top:20px;
+    display:block;
 }
