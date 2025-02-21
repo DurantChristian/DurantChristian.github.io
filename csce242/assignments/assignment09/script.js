@@ -7,7 +7,7 @@ document.getElementById("drawStairs").addEventListener("click", () => {
     ladder.style.position = "relative"; 
     container.appendChild(ladder);
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 1; i < 10; i++) {
         let stair = document.createElement("div");
         stair.className = "stair";
         stair.style.width = "100%";
