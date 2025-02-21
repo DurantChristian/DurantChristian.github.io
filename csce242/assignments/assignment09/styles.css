@@ -36,8 +36,13 @@ body {
 #climbStairs {
     margin-top:10px;
     display:none;
+    display:block;
+    text-align:center;
 }
 #author {
     margin-top:20px;
     display:block;
+}
+#authorMove {
+    text-align:center;
 }
