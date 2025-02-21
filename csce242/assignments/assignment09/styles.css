@@ -32,9 +32,6 @@ body {
     bottom:25px;
     width:50px;
 }
-button {
-    justify-content: center;
-}
 #climbStairs {
     margin-top:10px;
     display:none;
