@@ -14,7 +14,7 @@ document.getElementById("drawStairs").addEventListener("click", () => {
         stair.style.height = "5px";
         stair.style.backgroundColor = "black";
         stair.style.position = "absolute";
-        stair.style.bottom = (i * 30) + "px";
+        stair.style.bottom = (i * 25) + "px";
         ladder.appendChild(stair);
     }
 
