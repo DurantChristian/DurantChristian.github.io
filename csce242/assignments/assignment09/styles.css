@@ -34,10 +34,8 @@ body {
     width:50px;
 }
 #climbStairs {
-    margin-top:10px;
-    display:none;
+    margin-top:10px auto;
     display:block;
-    justify-content: center;
     text-align:center;
 }
 #controls {
