@@ -27,6 +27,9 @@ document.getElementById("drawStairs").addEventListener("click", () => {
     container.appendChild(stickFigure); 
 
     document.getElementById("climbStairs").style.display = "block";
+
+    let author = document.getElementById("author");
+    author.style.display = "none";
 });
 
 document.getElementById("climbStairs").addEventListener("click", () => {
@@ -47,4 +50,10 @@ document.getElementById("climbStairs").addEventListener("click", () => {
             imgIndex++;
         }
     }, 500);
+    
+    let author = document.getElementById("author");
+    author.style.display = "block";
+    let climbStairsBtn = document.getElementById("climbStairs");
+    climbStairsBtn.insertAdjacentElement("afterend", author);
+
 });
