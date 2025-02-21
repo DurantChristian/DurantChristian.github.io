@@ -14,14 +14,14 @@ document.getElementById("drawStairs").addEventListener("click", () => {
         stair.style.height = "5px";
         stair.style.backgroundColor = "black";
         stair.style.position = "absolute";
-        stair.style.bottom = (i * 25) + "px";
+        stair.style.bottom = (i * 30) + "px";
         ladder.appendChild(stair);
     }
 
     let stickFigure = document.getElementById("stickFigure");
     stickFigure.style.display = "block";
     stickFigure.style.position = "absolute";
-    stickFigure.style.bottom = "25px"; 
+    stickFigure.style.bottom = "50px"; 
     stickFigure.style.left = "50%";
     stickFigure.style.transform = "translateX(-50%)";
     container.appendChild(stickFigure); 
@@ -31,7 +31,7 @@ document.getElementById("drawStairs").addEventListener("click", () => {
 
 document.getElementById("climbStairs").addEventListener("click", () => {
     let stickFigure = document.getElementById("stickFigure");
-    let position = 25; 
+    let position = 50; 
     let step = 25; 
     let maxPosition = step * 9; 
     let images = ["/csce242/assignments/assignment09/images/left.png", "/csce242/assignments/assignment09/images/right.png"];
