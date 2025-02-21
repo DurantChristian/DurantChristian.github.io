@@ -1,7 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0e6;
+    background-color: #ede7f6;
     text-align: center;
+    color:#4a148c;
 }
 #container {
     margin: auto;
@@ -46,8 +47,10 @@ body {
 #author {
     margin-top:20px;
     display:block;
+    color:#4a148c;
 }
 #authorMove {
     display:none;
     margin-top:10px;
+    color:#4a148c;
 }
