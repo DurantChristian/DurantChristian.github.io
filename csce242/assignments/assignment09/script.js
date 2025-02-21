@@ -26,6 +26,7 @@ document.getElementById("drawStairs").addEventListener("click", () => {
     stickFigure.style.transform = "translateX(-50%)";
     container.appendChild(stickFigure); 
 
+    document.getElementById("controls").style.display = "block";
     document.getElementById("climbStairs").style.display = "block";
 
     document.getElementById("author").style.display = "none";

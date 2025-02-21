@@ -39,10 +39,16 @@ body {
     display:block;
     text-align:center;
 }
+#controls {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+}
 #author {
     margin-top:20px;
     display:block;
 }
 #authorMove {
-    text-align:center;
+    display:none;
+    margin-top:10px;
 }
