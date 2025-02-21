@@ -37,6 +37,7 @@ body {
     margin-top:10px;
     display:none;
     display:block;
+    justify-content: center;
     text-align:center;
 }
 #controls {
