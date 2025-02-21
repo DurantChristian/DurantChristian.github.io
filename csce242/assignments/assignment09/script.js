@@ -7,7 +7,7 @@ document.getElementById("drawStairs").addEventListener("click", () => {
     ladder.style.position = "relative"; 
     container.appendChild(ladder);
 
-    for (let i = 1; i < 10; i++) {
+    for (let i = 1; i < 11; i++) {
         let stair = document.createElement("div");
         stair.className = "stair";
         stair.style.width = "100%";
@@ -21,7 +21,7 @@ document.getElementById("drawStairs").addEventListener("click", () => {
     let stickFigure = document.getElementById("stickFigure");
     stickFigure.style.display = "block";
     stickFigure.style.position = "absolute";
-    stickFigure.style.bottom = "12px"; 
+    stickFigure.style.bottom = "25px"; 
     stickFigure.style.left = "50%";
     stickFigure.style.transform = "translateX(-50%)";
     container.appendChild(stickFigure); 
@@ -31,7 +31,7 @@ document.getElementById("drawStairs").addEventListener("click", () => {
 
 document.getElementById("climbStairs").addEventListener("click", () => {
     let stickFigure = document.getElementById("stickFigure");
-    let position = 12; 
+    let position = 25; 
     let step = 25; 
     let maxPosition = step * 9; 
     let images = ["/csce242/assignments/assignment09/images/left.png", "/csce242/assignments/assignment09/images/right.png"];
