@@ -4,6 +4,9 @@ body {
     text-align: center;
     color:#4a148c;
 }
+h3 {
+    color:black;
+}
 #container {
     margin: auto;
     width: 100%;
