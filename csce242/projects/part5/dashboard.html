@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div id="toggle-nav">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="nav-items" class="hidden">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="reviews.html">Game Reviews</a></li>
+            <li><a href="about&contact.html">About & Contact</a></li>
+            <li><a href="dashboard.html">User Dashboard</a></li>
+        </ul>
+    </nav>
+    
+    <nav class="secondary-nav">
+        <ul>
+            <li><a href="dashboard.html">Profile</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="notifications.html">Notifications</a></li>
+            <li><a href="activity.html">Activity</a></li>
+        </ul>
+    </nav>
+    
+    <main class="dashboard-container">
+        <section class="user-profiles">
+            <h2>User Profiles</h2>
+            <div class="profile-box">
+                <a href="https://th.bing.com/th/id/OIP._LD4BZXDIeGEgTdaTU0-dwHaEK?w=260&h=180&c=7&r=0&o=5&dpr=2&pid=1.7">
+                <img src="/csce242/projects/part5/images/john.png" alt="Profile 1"></a>
+                <div class="profile-info">
+                    <p>John Doe</p>
+                    <p>Web Developer</p>
+                    <p>Passionate about games</p>
+                    <button class="edit-btn">Edit</button>
+                </div>
+            </div>
+            <div class="profile-box">
+                <a href="https://th.bing.com/th/id/OIP.c0VBB-lqMAzkkXGwoNuoMgAAAA?w=126&h=180&c=7&r=0&o=5&dpr=2&pid=1.7">
+                <img src="/csce242/projects/part5/images/jane.png" alt="Profile 2"></a>
+                <div class="profile-info">
+                    <p>Jane Smith</p>
+                    <p>Graphic Designer</p>
+                    <p>Love creating games</p>
+                    <button class="edit-btn">Edit</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="user-details">
+            <h2>User Profile</h2>
+            <a href="https://th.bing.com/th/id/OIP.sYBdeQnREOilbZ4_9ibSeAHaHa?w=173&h=180&c=7&r=0&o=5&dpr=2&pid=1.7">
+            <img src="/csce242/projects/part5/images/user.png" alt="User Profile"></a>
+            <p>Here are the detailed information of the user.</p>
+            <a href="settings.html">
+            <button class="edit-btn">Edit</button>
+            </a>
+            <button class="delete-btn">Delete</button>
+        </section>
+        
+        <section class="friends-list">
+            <h2>Friends</h2>
+            <div class="friend-box">
+                <a href="https://th.bing.com/th/id/OIF.PQ9y6X1FytHUvvG5sh2sKQ?w=176&h=180&c=7&r=0&o=5&dpr=2&pid=1.7">
+                <img src="/csce242/projects/part5/images/friend1.png" alt="Friend 1"></a>
+                <div class="friend-info">
+                    <p>Mike Johnson</p>
+                    <p>Data Analyst</p>
+                    <p>Data-driven decision</p>
+                    <button class="contact-btn">Contact</button>
+                </div>
+            </div>
+            <div class="friend-box">
+                <a href="https://www.shutterstock.com/image-photo/portrait-streamer-african-young-woman-260nw-1893225928.jpg">
+                <img src="/csce242/projects/part5/images/friend2.png" alt="Friend 2"></a>
+                <div class="friend-info">
+                    <p>Emily Davis</p>
+                    <p>Project Manager</p>
+                    <p>Expert in managing</p>
+                    <button class="contact-btn">Contact</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
