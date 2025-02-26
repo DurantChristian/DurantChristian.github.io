@@ -7,6 +7,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    flex-direction: row;
     gap: 20px;
     margin: 20px;
 }
@@ -21,6 +22,7 @@ body {
 img {
     width: 100%;
     border-radius: 10px;
+    height: 166.66px;
 }
 h2 {
     color: #a52a2a;
