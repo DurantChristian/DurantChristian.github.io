@@ -19,7 +19,7 @@ class Pizza {
 const pizzas = [
     new Pizza("Hawaiian", "/csce242/assignments/assignment11/images/hawaiian.png", "Ham, Pineapple, Cheese", 12.99, "Large", "Thin Crust"),
     new Pizza("Buffalo Chicken Ranch", "/csce242/assignments/assignment11/images/buffalo.png", "Chicken, Ranch, Cheese", 14.99, "Medium", "Stuffed Crust"),
-    new Pizza("Margarita", "/csce242/assignments/assignment11/images/margarita.png", "Tomatoes, Basil, Mozzarella", 10.99, "Small", "Thin Crust"),
+    new Pizza("Margarita", "/csce242/assignments/assignment11/images/Margarita.png", "Tomatoes, Basil, Mozzarella", 10.99, "Small", "Thin Crust"),
     new Pizza("Pepperoni", "/csce242/assignments/assignment11/images/pepperoni.png", "Pepperoni, Cheese, Tomato Sauce", 11.99, "Large", "Regular Crust"),
     new Pizza("Veggie", "/csce242/assignments/assignment11/images/veggie.png", "Mushrooms, Peppers, Olives", 13.99, "Medium", "Thin Crust")
 ];
