@@ -58,6 +58,7 @@ h2 {
     align-items: center;
     justify-content: space-between;
     transform: rotate(0deg);
+    transition: transform 0.5s ease-in-out;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
 }
 .modal-content img {

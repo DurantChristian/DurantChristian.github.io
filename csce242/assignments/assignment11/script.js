@@ -42,8 +42,6 @@ const showModal = (name, image, ingredients, sauce, cheese, price) => {
     
     const modal = document.getElementById("pizzaModal");
     const modalContent = document.getElementById("modalContent");
-    modalContent.classList.remove("rotate");
-    void modalContent.offsetWidth; 
     modal.style.display = "flex";
     modalContent.classList.add("rotate");
     setTimeout(() => modalContent.classList.remove("rotate"), 500);
