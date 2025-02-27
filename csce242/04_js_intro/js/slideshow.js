@@ -1,6 +1,7 @@
 setInterval(()=>{
     const currentSlide = document.querySelector("#slideshow :not(.hidden)");
     const nextSlide = currentSlide.nextElementSibling;
+    
     if(nextSlide == null) {
         nextSlide = document.querySelector("#slideshow :first-child");
     }
