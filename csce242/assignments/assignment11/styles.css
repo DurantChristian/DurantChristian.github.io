@@ -20,7 +20,7 @@ body {
     gap: 20px;
 }
 .pizza {
-    width: 230px;
+    width: 200px;
     cursor: pointer;
     text-align: center;
 }
