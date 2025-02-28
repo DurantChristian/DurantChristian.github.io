@@ -3,7 +3,7 @@ window.onload = async () => {
     const reviewsContainer = document.getElementById("game-reviews");
 
     if (!reviewsContainer) {
-        console.error("Error: #reviews-container not found!");
+        console.error("Error: #game-reviews not found!");
         return;
     }
 
