@@ -3,20 +3,25 @@ const url = "reviews.json";
 const fetchReviews = async () => {
     try {
         const response = await fetch(url);
-        return await response.json();
+        const data = await response.json();
+        return data.reviews || []; 
     } catch (error) {
-        console.log(error);
+        console.error("Error fetching reviews:", error);
+        return [];
     }
 };
 
 const displayReviews = async () => {
-    const data = await fetchReviews();
-    if (!data) return; 
-
-    const reviewsContainer = document.querySelector(".game-reviews");
+    const reviewsContainer = document.getElementById("reviews-container");
     reviewsContainer.innerHTML = ""; 
 
-    data.forEach(game => {
+    const reviews = await fetchReviews();
+    if (!Array.isArray(reviews)) {
+        console.error("Expected an array but got:", typeof reviews);
+        return;
+    }
+
+    reviews.forEach(game => {
         const reviewElement = document.createElement("div");
         reviewElement.classList.add("review");
 
@@ -26,11 +31,17 @@ const displayReviews = async () => {
             </a>
             <h3>${game.title}</h3>
             <p>${game.description}</p>
+            <p><strong>Category:</strong> ${game.categories.join(", ")}</p>
+            <p><strong>Rating:</strong> ${game.rating}/10</p>
+            <p><strong>Release Year:</strong> ${game.release_year}</p>
+            <p><strong>Developer:</strong> ${game.developer}</p>
             <a href="#">Read More</a>
         `;
 
         reviewsContainer.appendChild(reviewElement);
     });
+
+    console.log("Reviews displayed successfully!"); 
 };
 
-displayReviews();
+document.addEventListener("DOMContentLoaded", displayReviews);
