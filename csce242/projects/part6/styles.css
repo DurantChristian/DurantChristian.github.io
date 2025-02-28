@@ -1,0 +1,843 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3f2fd;
+}
+
+nav {
+    background-color: #1565c0;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom:2px solid transparent;
+}
+
+nav ul li a:hover {
+    border-bottom:2px solid white;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e88e5;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.about-placeholder img {
+     justify-items:right;
+     align-items:center;
+}
+
+<!--color-->
+.index-container, .dashboard-container, .shop-container, .order-container, .highlights-container, .notifications-container, .activity-container {
+    background: #e3f2fd;
+}
+
+.about-section, .contact-section, .user-profiles, .user-details, .friends-list, .shop-items, .order-confirmation, .activity-list {
+    background: #bbdefb;
+}
+
+h2 {
+    color: #0d47a1;
+    text-align: center;
+}
+
+button {
+    background: #1e88e5;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0d47a1;
+}
+
+<!--mainpage-->
+.index-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.highlights {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+    justify-items: center; 
+    align-items: center; 
+    box-sizing: border-box;
+}
+
+.grid-item {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    min-height: 250px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 200px;
+    object-fit:contain;
+    border-radius: 5px;
+}
+
+.grid-item p {
+    font-size: 1em;
+    color: #333;
+    margin-top: 10px;
+}
+
+.grid-item a {
+    text-decoration:none;
+}
+
+.reviews-search input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.game-categories ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.game-categories ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.game-categories ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+.review {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width:250px;
+}
+
+.review img {
+    width: 100%;
+    height: 180px; 
+    object-fit: contain; 
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+.review-box {
+    border: 2px solid black;
+    padding: 20px;
+    width: 100%;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product img {
+    width: 100px;
+    height: auto;
+}
+
+.two-column-container {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.about-section, .contact-section {
+    flex: 1;
+    min-width: 300px; 
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.contact-content label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-content input,
+.contact-content select,
+.contact-content textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-content button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width:100%;
+}
+
+.contact-content button:hover {
+    background-color: #555;
+}
+
+.contact-info, .faq {
+    flex:1;
+    max-width: 300px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p, .faq ul {
+    margin: 10px 0;
+    list-style-type:none;
+}
+
+.contact-info img {
+    width: 100%; 
+    max-width: 250px; 
+    display: block;
+    margin: 10px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+    max-width: 400px;
+    margin: auto; 
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.reviews-search input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.game-categories {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.game-categories ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.game-categories ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.game-categories ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+.game-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background:white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+<!--reviewpage-->
+
+.review {
+    background: white;
+    padding: 15px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.review h3 {
+    color: #444;
+}
+
+.review p {
+    font-size: 1em;
+    color: #666;
+}
+
+.review a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.review a:hover {
+    text-decoration: underline;
+}
+<!--witcherreview-->
+.review-box {
+    border: 2px solid black;
+    padding: 20px;
+    width: 60%;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+}
+<!--userdashboard-->
+.secondary-nav {
+    background-color: #555;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    width:100%;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.user-profiles, .user-details, .friends-list {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    min-height: 300px;
+}
+
+.user-profiles h2, .user-details h2, .friends-list h2 {
+    text-align: left;
+}
+
+.profile-box, .friend-box {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.profile-box img, .friend-box img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.profile-info, .friend-info {
+    flex-grow: 1;
+}
+
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.edit-btn {
+    background: #007BFF;
+}
+
+.delete-btn {
+    background: #ccc;
+    color: black;
+}
+
+.contact-btn {
+    background: #007BFF;
+}
+<!--settings-->
+.settings-container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.update-photo-btn {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.settings-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-form label {
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.settings-form input,
+.settings-form select {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.save-btn {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cancel-btn {
+    background: #ccc;
+    color: black;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+<!--notifications-->
+.notifications-container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+.notifications-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background: #555;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.notifications-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.notifications-list, .new-message-alert {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.notification-item {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.notifications-list {
+    background:#e3f2fd;
+}
+
+.notification-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.notification-text {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.read-btn, .dismiss-btn {
+    margin-top: 10px;
+}
+<!--Activitylog-->
+.activity-container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.activity-item {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.activity-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.activity-text {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+<!--highlights-->
+.highlights-container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 600px;
+}
+
+.highlights-content {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+    background:white;
+}
+
+.highlights-img {
+    width: 200px;
+    height: 273px;
+    border-radius: 5px;
+}
+
+.highlights-text {
+    flex-grow: 1;
+}
+
+.highlights-text p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+<!--shop-->
+.shop-container {
+    background: #e3f2fd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.search-box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.featured-img {
+    width: 100%;
+    height:200px;
+    margin-bottom: 20px;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding:20px;
+    margin:10px;
+    box-sizing:border-box;
+}
+
+.game-item {
+    display:flex;
+    flex-direction:column;
+    background: white;
+    padding: 10px;
+    margin:10px;
+    width:100%;
+    min-height:250px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    text-align: center;
+    box-sizing:border-box;
+}
+
+.game-item img {
+    width: 100%;
+    height: auto;
+    object-fit:contain;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.buy-btn {
+    background: #007BFF;
+    color: white;
+    border: none;
+    width:100%;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+<!--order-->
+.order-container {
+    display:flex;
+    flex-direction:column;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    align-items:center;
+    justify-content:center;
+}
+
+main.order-container {
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    align-items:center;
+    justify-content:center;
+}
+
+.order-img {
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+    display:block;
+}
+<!--toggle-->
+#toggle-nav {
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#toggle-nav div {
+    width:25px;
+    height:2px;
+    background:white;
+    margin:6px 0;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.secondary-nav a {
+    border-bottom:2px solid transparent;
+}
+
+.secondary-nav a:hover {
+    border-bottom:2px solid white;
+}
+
+.hidden {
+    display:none;
+}
+
+@media (min-width: 900px) {
+    #nav-items {
+        display:flex !important;
+        flex-direction: row; 
+        align-items: center; 
+        background: #1565c0;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    #secondary-nav {
+        display:flex;
+        flex-direction: column; 
+        align-items: center; 
+        background: white;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    #nav-items li {
+        flex:1;
+    }
+
+    #toggle-nav {
+        display:none; 
+    }
+}
+
+@media (max-width: 768px) {
+    #nav, #secondary-nav {
+        display: flex !important;
+        flex-direction: column;
+        align-items: left;
+        width: 100%;
+    }
+
+    #nav-items {
+        display:none;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    #nav-items.hidden {
+        display:flex;
+    }
+
+    #secondary-nav ul {
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        text-align:left;
+    }
+
+    #nav-items li, #secondary-nav ul li {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    #toggle-nav {
+        display: block;
+        color: white;
+        padding: 10px;
+        text-align: left;
+        width: 100%;
+    }
+
+    #two-column-container {
+        flex-direction: column;
+    }
+
+    #dashboard-container {
+        flex-direction: column;
+    }
+}

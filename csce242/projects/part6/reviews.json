@@ -1,0 +1,84 @@
+{
+    "games": [
+      {
+        "_id": 1,
+        "title": "The Witcher 3",
+        "img_name": "images/witcher3.png",
+        "features": ["Open world", "Story-driven", "RPG mechanics"],
+        "genre": "RPG",
+        "rating": 9.5,
+        "developer": "CD Projekt Red",
+        "release_year": 2015
+      },
+      {
+        "_id": 2,
+        "title": "Call of Duty",
+        "img_name": "images/callofduty.png",
+        "features": ["Multiplayer", "Fast-paced", "FPS"],
+        "genre": "Shooter",
+        "rating": 8.7,
+        "developer": "Infinity Ward",
+        "release_year": 2023
+      },
+      {
+        "_id": 3,
+        "title": "Portal 2",
+        "img_name": "images/portal2.png",
+        "features": ["Puzzle", "Co-op mode", "Sci-fi setting"],
+        "genre": "Puzzle",
+        "rating": 9.3,
+        "developer": "Valve",
+        "release_year": 2011
+      },
+      {
+        "_id": 4,
+        "title": "Fortnite",
+        "img_name": "images/fortnitecover.png",
+        "features": ["Battle royale", "Building mechanics", "Multiplayer"],
+        "genre": "Shooter",
+        "rating": 8.5,
+        "developer": "Epic Games",
+        "release_year": 2017
+      },
+      {
+        "_id": 5,
+        "title": "Minecraft",
+        "img_name": "images/minecraft.png",
+        "features": ["Sandbox gameplay", "Creative mode", "Survival mode"],
+        "genre": "Sandbox",
+        "rating": 9.7,
+        "developer": "Mojang",
+        "release_year": 2011
+      },
+      {
+        "_id": 6,
+        "title": "Sims 4",
+        "img_name": "images/sims.png",
+        "features": ["Life simulation", "Customization", "Open-world"],
+        "genre": "Simulation",
+        "rating": 7.9,
+        "developer": "Maxis",
+        "release_year": 2014
+      },
+      {
+        "_id": 7,
+        "title": "Elden Ring",
+        "img_name": "images/eldenring.png",
+        "features": ["Open world", "Challenging combat", "Fantasy setting"],
+        "genre": "RPG",
+        "rating": 9.8,
+        "developer": "FromSoftware",
+        "release_year": 2022
+      },
+      {
+        "_id": 8,
+        "title": "Casino",
+        "img_name": "images/gamble.png",
+        "features": ["Gambling mechanics", "High stakes", "Chance-based gameplay"],
+        "genre": "Casino",
+        "rating": 6.5,
+        "developer": "Various",
+        "release_year": 2020
+      }
+    ]
+  }
