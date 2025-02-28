@@ -3,24 +3,15 @@ const url = "reviews.json";
 const fetchReviews = async () => {
     try {
         const response = await fetch(url);
-        const data = await response.json();
-        
-        console.log("Fetched Data:", data);
-
-        return Array.isArray(data.reviews) ? data.reviews : [];
+        return await response.json();
     } catch (error) {
-        console.error("Error fetching reviews:", error);
-        return [];
+        console.log(error);
     }
 };
 
 const displayReviews = async () => {
     const data = await fetchReviews();
-    
-    if (!Array.isArray(data)) {
-        console.error("Error: Expected an array but got", typeof data);
-        return;
-    }
+    if (!data) return; 
 
     const reviewsContainer = document.querySelector(".game-reviews");
     reviewsContainer.innerHTML = ""; 
