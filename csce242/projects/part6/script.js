@@ -12,7 +12,7 @@ const fetchReviews = async () => {
 };
 
 const displayReviews = async () => {
-    const reviewsContainer = document.getElementById("reviews-container");
+    const reviewsContainer = document.getElementById("game-reviews");
     reviewsContainer.innerHTML = ""; 
 
     const reviews = await fetchReviews();
