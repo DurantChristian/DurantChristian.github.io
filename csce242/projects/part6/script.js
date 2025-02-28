@@ -1,9 +1,9 @@
 window.onload = async () => {
     const url = "reviews.json"; 
-    const reviewsContainer = document.getElementById("game-reviews");
+    const reviewsContainer = document.getElementById("reviews-container");
 
     if (!reviewsContainer) {
-        console.error("Error: #game-reviews not found!");
+        console.error("Error: #reviews-container not found!");
         return;
     }
 
