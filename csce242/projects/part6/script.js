@@ -3,14 +3,29 @@ const getReviews = async () => {
 
     try {
         const response = await fetch(url);
-        return await response.json();
-    } catch(error) {
-        console.log(error);
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+
+        const data = await response.json();
+        console.log("Fetched Data:", data);
+
+        return Array.isArray(data.games) ? data.games : [];
+    } catch (error) {
+        console.error("Error fetching reviews:", error);
+        return [];
     }
 };
 
 const showReviews = async () => {
     let gameReviews = await getReviews();
+
+    console.log("Is gameReviews an array?", Array.isArray(gameReviews));
+    console.log("gameReviews data:", gameReviews);
+
+    if (!Array.isArray(gameReviews)) {
+        console.error("Data fetched is not an array:", gameReviews);
+        return;
+    }
+
     let reviewsContainer = document.getElementById("reviews-container");
 
     if (!reviewsContainer) {

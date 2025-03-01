@@ -1,4 +1,5 @@
-    [
+{
+    "games": [
       {
         "_id": 1,
         "title": "The Witcher 3",
@@ -88,3 +89,4 @@
         "external_link": "https://th.bing.com/th/id/OIP.XuuZ9U8X2G2ENh2t1380GwHaEK?w=318&h=180&c=7&r=0&o=5&dpr=2&pid=1.7"
       }
     ]
+  }
