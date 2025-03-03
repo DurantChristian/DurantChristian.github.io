@@ -49,7 +49,7 @@ const getReviewItem = (gamereview) => {
     section.append(h3);
 
     let img = document.createElement("img");
-    img.src = `images/${gamereview.img_name}`; 
+    img.src = `csce242/projects/part6/images/${gamereview.img_name}`; 
     img.alt = gamereview.title;
     section.append(img);
 
