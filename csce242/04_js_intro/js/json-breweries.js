@@ -44,9 +44,9 @@ const showBreweries = async() => {
         p.innerHTML = brewery.brewery_type + " brewery";
         section.append(p);
 
-        const iframe = document.createElement("iframe");
-        iframe.src= await getMap(brewery.latitude, brewery.longitude);
-        section.append(iframe);
+        // const iframe = document.createElement("iframe");
+        // iframe.src= await getMap(brewery.latitude, brewery.longitude);
+        // section.append(iframe);
     });
     
 };
