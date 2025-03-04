@@ -27,7 +27,7 @@ const showBreweries = async() => {
     const breweriesSection = document.getElementById("breweries-section");
     const breweries = await getBreweries();
     
-    breweries.forEach((brewery)=> {
+    breweries.forEach(async(brewery)=> {
         const section = document.createElement("section");
         section.classList.add("brewery");
         breweriesSection.append(section);
@@ -43,6 +43,10 @@ const showBreweries = async() => {
         const p = document.createElement("p");
         p.innerHTML = brewery.brewery_type + " brewery";
         section.append(p);
+
+        const iframe = document.createElement("iframe");
+        iframe.src= await getMap(brewery.latitude, brewery.longitude);
+        section.append(iframe);
     });
     
 };
