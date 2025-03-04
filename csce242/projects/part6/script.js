@@ -90,6 +90,5 @@ const getReview = (reviews) => {
 
     return section;
 };
-
-window.onload = () => showReviews();
 }
+showReviews();
