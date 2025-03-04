@@ -29,8 +29,8 @@ reviews.forEach(async(review) => {
     img.src = `images/${review.img_name}`; 
     img.alt = review.title;
     img.style.cursor = "pointer";
-    section.append(imglink);
-    section.append(img);
+    imglink.appendChild(img);
+    section.appendChild(imglink);
 
     const ul = document.createElement("ul");
     ul.style.listStyleType = "none";
