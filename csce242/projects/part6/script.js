@@ -11,20 +11,7 @@ const getReviews = async () => {
 const showReviews = async () => {
     let gameReviews = await getReviews();
 
-    console.log("Is gameReviews an array?", Array.isArray(gameReviews));
-    console.log("gameReviews data:", gameReviews);
-
-    if (!Array.isArray(gameReviews)) {
-        console.error("Data fetched is not an array:", gameReviews);
-        return;
-    }
-
     let reviewsContainer = document.getElementById("reviews-container");
-
-    if (!reviewsContainer) {
-        console.error("Element with ID 'reviews-container' not found.");
-        return;
-    }
 
     reviewsContainer.innerHTML = "";
 
@@ -80,4 +67,4 @@ const getReview = (reviews) => {
 
     return section;
 };
-showReviews();
+window.onload = () => showReviews();
