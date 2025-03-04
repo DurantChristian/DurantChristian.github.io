@@ -18,13 +18,4 @@ const showShoes = async() => {
     });
 };
 
-const showBrand = async() => {
-    const brands = await getBrands();
-    const brandsSection = document.getElementById("shoes-section");
-
-    brands.forEach((brand) => {
-        brandsSection.append(brand.brand);
-    });
-};
-
 showShoes();
