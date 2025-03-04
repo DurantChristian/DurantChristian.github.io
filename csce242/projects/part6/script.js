@@ -23,6 +23,8 @@ reviews.forEach(async(review) => {
     section.append(h3);
 
     const img = document.createElement("img");
+    const imglink = document.createElement("a");
+    imglink.href = review.reference;
     img.src = `images/${review.img_name}`; 
     img.alt = review.title;
     section.append(img);

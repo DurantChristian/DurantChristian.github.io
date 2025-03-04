@@ -8,6 +8,7 @@
         "rating": 9.5,
         "developer": "CD Projekt Red",
         "release_year": 2015,
+        "reference": "https://image.api.playstation.com/vulcan/ap/rnd/202211/0711/kh4MUIuMmHlktOHar3lVl6rY.png",
         "external_link": "gamereview.html"
       },
       {
@@ -19,7 +20,8 @@
         "rating": 8.7,
         "developer": "Infinity Ward",
         "release_year": 2023,
-        "external_link": "https://th.bing.com/th/id/OIP.VuiE5FTU5oGpkPFpB219MAHaJP?w=202&h=253&c=7&r=0&o=5&dpr=2&pid=1.7"
+        "reference": "https://th.bing.com/th/id/OIP.VuiE5FTU5oGpkPFpB219MAHaJP?w=202&h=253&c=7&r=0&o=5&dpr=2&pid=1.7",
+        "external_link": "#"
       },
       {
         "_id": 3,
@@ -30,7 +32,8 @@
         "rating": 9.3,
         "developer": "Valve",
         "release_year": 2011,
-        "external_link": "https://th.bing.com/th/id/OIP.4TnaxXC6nGhzKiqy8ddkzgHaHa?w=178&h=180&c=7&r=0&o=5&dpr=2&pid=1.7"
+        "reference": "https://th.bing.com/th/id/OIP.4TnaxXC6nGhzKiqy8ddkzgHaHa?w=178&h=180&c=7&r=0&o=5&dpr=2&pid=1.7",
+        "external_link": "#"
       },
       {
         "_id": 4,
@@ -41,7 +44,8 @@
         "rating": 8.5,
         "developer": "Epic Games",
         "release_year": 2017,
-        "external_link": "https://th.bing.com/th/id/OIP.-d1p2Hl7wIaVAbXcnwAi8gHaHa?w=178&h=180&c=7&r=0&o=5&dpr=2&pid=1.7"
+        "reference": "https://th.bing.com/th/id/OIP.-d1p2Hl7wIaVAbXcnwAi8gHaHa?w=178&h=180&c=7&r=0&o=5&dpr=2&pid=1.7",
+        "external_link": "#"
       },
       {
         "_id": 5,
@@ -52,7 +56,8 @@
         "rating": 9.7,
         "developer": "Mojang",
         "release_year": 2011,
-        "external_link": "https://th.bing.com/th/id/OIP.q3f8gyBPvNpIXNxDrrKJfgHaLH?w=121&h=182&c=7&r=0&o=5&dpr=2&pid=1.7"
+        "reference": "https://th.bing.com/th/id/OIP.q3f8gyBPvNpIXNxDrrKJfgHaLH?w=121&h=182&c=7&r=0&o=5&dpr=2&pid=1.7",
+        "external_link": "#"
       },
       {
         "_id": 6,
@@ -63,7 +68,8 @@
         "rating": 7.9,
         "developer": "Maxis",
         "release_year": 2014,
-        "external_link": "https://th.bing.com/th/id/OIP.OTfX_Ps333yQWE_mIBqeiQHaHa?w=202&h=202&c=7&r=0&o=5&dpr=2&pid=1.7"
+        "reference": "https://th.bing.com/th/id/OIP.OTfX_Ps333yQWE_mIBqeiQHaHa?w=202&h=202&c=7&r=0&o=5&dpr=2&pid=1.7",
+        "external_link": "#"
       },
       {
         "_id": 7,
@@ -74,7 +80,8 @@
         "rating": 9.8,
         "developer": "FromSoftware",
         "release_year": 2022,
-        "external_link": "https://th.bing.com/th/id/OIP.yJirbyWKnLNEVvWDciCxPQAAAA?w=155&h=220&c=7&r=0&o=5&dpr=2&pid=1.7"
+        "reference": "https://th.bing.com/th/id/OIP.yJirbyWKnLNEVvWDciCxPQAAAA?w=155&h=220&c=7&r=0&o=5&dpr=2&pid=1.7",
+        "external_link": "#"
       },
       {
         "_id": 8,
@@ -85,6 +92,7 @@
         "rating": 6.5,
         "developer": "Various",
         "release_year": 2020,
-        "external_link": "https://th.bing.com/th/id/OIP.XuuZ9U8X2G2ENh2t1380GwHaEK?w=318&h=180&c=7&r=0&o=5&dpr=2&pid=1.7"
+        "reference": "https://th.bing.com/th/id/OIP.XuuZ9U8X2G2ENh2t1380GwHaEK?w=318&h=180&c=7&r=0&o=5&dpr=2&pid=1.7",
+        "external_link": "#"
       }
     ]
