@@ -45,7 +45,7 @@ const showReviews = async () => {
 
 const getReviewItem = (gamereview) => {
     let section = document.createElement("section");
-    section.classList.add("review");
+    section.classList.add("reviews-container");
 
     let h3 = document.createElement("h3");
     h3.innerText = gamereview.title;
