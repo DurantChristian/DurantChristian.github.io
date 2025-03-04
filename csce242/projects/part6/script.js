@@ -30,6 +30,7 @@ reviews.forEach(async(review) => {
     img.src = `images/${review.img_name}`; 
     img.alt = review.title;
     imglink.appendChild(img);
+    section.appendChild(imglink);
     section.append(img);
 
     const ul = document.createElement("ul");
