@@ -25,18 +25,19 @@ reviews.forEach(async(review) => {
     const img = document.createElement("img");
     const imglink = document.createElement("a");
     imglink.href = review.reference;
-    imglink.target = "_blank";
-    imglink.src = `images/${review.img_name}`; 
+    imglink.target = "_blank"; 
     img.src = `images/${review.img_name}`; 
     img.alt = review.title;
+    img.style.cursor = "pointer";
     imglink.appendChild(img);
     section.appendChild(imglink);
     section.append(img);
 
     const ul = document.createElement("ul");
+    ul.style.listStyleType = "none";
     const details = [
     `Genre: ${review.genre}`,
-    `Developer: ${review.developer}`,
+    `About: ${review.about}`,
     `Release Year: ${review.release_year}`,
     `Rating: ${review.rating}`,
 ];
