@@ -15,7 +15,7 @@ const showReviews = async () => {
 
     reviewsContainer.innerHTML = "";
 
-    gameReviews.forEach((gamereview) => {
+    gameReviews.forEach(async(gamereview) => {
         reviewsContainer.append(getReviewItem(gamereview));
     });
 };
