@@ -1,4 +1,4 @@
-//https://api.openbrewerydb.org/breweries
+
 
 const getMap = async(latitude, longitude) => {
     try {
