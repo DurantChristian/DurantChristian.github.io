@@ -26,7 +26,7 @@ reviews.forEach(async(review) => {
     const imglink = document.createElement("a");
     imglink.href = review.reference;
     imglink.target = "_blank";
-    imglink.rel = "noopener noreferrer"; 
+    imglink.src = `images/${review.img_name}`; 
     img.src = `images/${review.img_name}`; 
     img.alt = review.title;
     imglink.appendChild(img);
