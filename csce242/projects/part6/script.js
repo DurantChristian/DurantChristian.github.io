@@ -23,7 +23,7 @@ reviews.forEach(async(review) => {
     section.append(h3);
 
     const img = document.createElement("img");
-    img.src = `csce242/projects/part6/images/${gamereview.img_name}`; 
+    img.src = `csce242/projects/part6/images/${review.img_name}`; 
     img.alt = review.title;
     section.append(img);
 
