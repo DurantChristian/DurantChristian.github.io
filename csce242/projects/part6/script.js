@@ -8,16 +8,6 @@ const getReviews = async () => {
         console.log(error);
     }
 };
-
-const showReviews = async () => {
-    let gameReviews = await getReviews();
-    let reviewsContainer = document.getElementById("reviews-container");
-
-    if (!reviewsContainer) {
-        console.error("Element with ID 'reviews-container' not found.");
-        return;
-    }
-
 const showReviews = async () => {
     let gameReviews = await getReviews();
 
@@ -90,5 +80,4 @@ const getReview = (reviews) => {
 
     return section;
 };
-}
 showReviews();
