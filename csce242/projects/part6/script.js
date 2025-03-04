@@ -3,17 +3,20 @@ const getReviews = async () => {
 
     try {
         const response = await fetch(url);
-        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-
-        const data = await response.json();
-        console.log("Fetched Data:", data);
-
-        return Array.isArray(data.games) ? data.games : [];
-    } catch (error) {
-        console.error("Error fetching reviews:", error);
-        return [];
+        return await response.json();
+    } catch(error) {
+        console.log(error);
     }
 };
+
+const showReviews = async () => {
+    let gameReviews = await getReviews();
+    let reviewsContainer = document.getElementById("reviews-container");
+
+    if (!reviewsContainer) {
+        console.error("Element with ID 'reviews-container' not found.");
+        return;
+    }
 
 const showReviews = async () => {
     let gameReviews = await getReviews();
@@ -73,7 +76,7 @@ const getReviewItem = (gamereview) => {
 
 const getLi = (data) => {
     const li = document.createElement("li");
-    li.textContent = data;
+    li.textContent = data.games;
     return li;
 };
 
@@ -89,3 +92,4 @@ const getReview = (reviews) => {
 };
 
 window.onload = () => showReviews();
+}
