@@ -1,9 +1,6 @@
 const toggleMenu = () => {
     document.getElementById("nav-items").classList.toggle("hidden");
 };
-window.onload = () => {
-    document.getElementById("toggle-nav").onclick = toggleMenu;
-};
 
 const getReviews = async () => {
     const url = "https://durantchristian.github.io/csce242/projects/part6/reviews.json";
@@ -18,9 +15,10 @@ const getReviews = async () => {
 
 const showReviews = async () => {
     const reviewsSection = document.getElementById("reviews-container");
+    reviewsSection.innerHTML = "";
     const reviews = await getReviews();
 
-reviews.forEach(async(review) => {
+reviews.forEach(review => {
     const section = document.createElement("section");
     section.classList.add("review");
     reviewsSection.append(section);
@@ -64,4 +62,7 @@ reviews.forEach(async(review) => {
     section.append(link);
 });
 };
-window.onload = () => showReviews();
+window.onload = () => {
+    document.getElementById("toggle-nav").onclick = toggleMenu;
+    showReviews();
+};
