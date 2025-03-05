@@ -15,7 +15,6 @@ const getReviews = async () => {
 
 const showReviews = async () => {
     const reviewsSection = document.getElementById("reviews-container");
-    reviewsSection.innerHTML = "";
     const reviews = await getReviews();
 
 reviews.forEach(review => {

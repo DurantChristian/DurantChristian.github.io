@@ -683,9 +683,9 @@ button {
 }
 
 .game-item img {
-    width: 100%;
-    height: 170px;
-    object-fit:contain;
+    width: auto;
+    height: 200px;
+    object-fit:cover;
     border-radius: 5px;
     margin:0 auto;
 }
