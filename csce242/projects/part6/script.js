@@ -64,4 +64,4 @@ reviews.forEach(async(review) => {
     section.append(link);
 });
 };
-showReviews();
+window.onload = () => showReviews();

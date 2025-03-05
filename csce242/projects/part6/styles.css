@@ -690,6 +690,10 @@ button {
     margin-bottom: 10px;
 }
 
+.game-item p {
+    margin-bottom: 10px;
+}
+
 .buy-btn {
     background: #007BFF;
     color: white;
