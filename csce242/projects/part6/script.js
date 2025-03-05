@@ -34,6 +34,8 @@ reviews.forEach(async(review) => {
 
     const ul = document.createElement("ul");
     ul.style.listStyleType = "none";
+    ul.style.marginTop = "10px";
+    ul.style.marginBottom = "10px";
     const details = [
     `Genre: ${review.genre}`,
     `About: ${review.about}`,
