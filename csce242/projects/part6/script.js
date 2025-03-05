@@ -1,3 +1,10 @@
+const toggleMenu = () => {
+    document.getElementById("nav-items").classList.toggle("hidden");
+};
+window.onload = () => {
+    document.getElementById("toggle-nav").onclick = toggleMenu;
+};
+
 const getReviews = async () => {
     const url = "https://durantchristian.github.io/csce242/projects/part6/reviews.json";
 
