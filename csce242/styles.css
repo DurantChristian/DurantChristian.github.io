@@ -37,6 +37,30 @@ body {
     font-weight:600;
 }
 
+.links {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.links a {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0080ff;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.links a:hover {
+    background-color: #004d80;
+    color: white;
+    transform: scale(1.1);
+}
+
 .assignment a, .project a {
     display:block;
     text-decoration:none;
