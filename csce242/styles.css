@@ -38,17 +38,20 @@ body {
 }
 
 .links {
-    margin-top: 10px;
+    margin-top: 12px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .links a {
-    display: inline-block;
     font-size: 14px;
     font-weight: bold;
     color: #0080ff;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 6px 12px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
@@ -58,7 +61,7 @@ body {
 .links a:hover {
     background-color: #004d80;
     color: white;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .assignment a, .project a {
