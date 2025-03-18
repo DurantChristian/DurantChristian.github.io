@@ -48,9 +48,11 @@
             <h2>Contact Us</h2>
             <p>Need help with an order or have a question? Our team is here for you!</p>
 
-            <form action="received.html" method="GET">
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="817cffc5-dfd0-4c25-8906-e6530a0c8308">
+
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" placeholder="First and Last" required>
 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
@@ -71,19 +73,19 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
 
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                <input type="hidden" name="subject" value="Contact from Gaming Overload">
+                <input type="hidden" name="from_name" value="Gaming Overload Website">
+
                 <button type="submit">Send</button>
                 <button type="reset">Cancel</button>
             </form>
-            <div id="responseMessage" class="message"></div>
-        </section>
 
-        <section class="contact-info">
-            <h2>Contact Information</h2>
-            <p>Phone support: +1 (800) 123-GAMING (Monday–Friday, 9am – 6pm EST)</p>
-            <p>Email: support@gamingoverload.com</p>
-            <p>Live chat: Available on our website from 9am – 9pm EST</p>
-            <a href="https://th.bing.com/th/id/OIP.3MME1ArJT1XzmGgmmASlogHaHa?w=159&h=180&c=7&r=0&o=5&dpr=2&pid=1.7">
-            <img src="/csce242/projects/part6/images/storelogo.png" alt="store logo"></a>
+            <h3>Visit Our Store</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211593.67774992716!2d-81.1023708995099!3d34.0399919986034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8a5697931d1e3%3A0xf32808f4b379fa96!2sColumbia%2C%20SC!5e0!3m2!1sen!2sus!4v1742330969352!5m2!1sen!2sus" 
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </section>
 
         <section class="faq">

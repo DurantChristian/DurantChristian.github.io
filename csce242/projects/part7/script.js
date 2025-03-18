@@ -1,3 +1,33 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
+    const resultMessage = document.getElementById("result");
+
+    if (form) {
+        form.addEventListener("submit", async function (event) {
+            event.preventDefault();
+
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                });
+
+                if (response.ok) {
+                    resultMessage.textContent = "Your message has been sent successfully!";
+                    resultMessage.classList.add("success");
+                    form.reset();
+                } else {
+                    throw new Error("Failed to send message. Please try again.");
+                }
+            } catch (error) {
+                resultMessage.textContent = error.message;
+                resultMessage.classList.add("error");
+            }
+        });
+    }
+
 const toggleMenu = () => {
     document.getElementById("nav-items").classList.toggle("hidden");
 };
@@ -65,3 +95,4 @@ window.onload = () => {
     document.getElementById("toggle-nav").onclick = toggleMenu;
     showReviews();
 };
+});
