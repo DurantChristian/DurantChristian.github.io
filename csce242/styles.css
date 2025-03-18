@@ -42,7 +42,7 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
     flex-wrap: wrap;
 }
 
@@ -59,7 +59,7 @@ body {
 }
 
 .links a:hover {
-    background-color: #004d80;
+    background-color: #0080ff;
     color: white;
     transform: scale(1.05);
 }
