@@ -135,11 +135,6 @@ h2 {
     transform:scale(1.1);
 }
 
-#map {
-    width:100%;
-    height:300px;
-}
-
 @media (max-width: 768px) {
     .assignments, .projects {
         flex-direction: row;  

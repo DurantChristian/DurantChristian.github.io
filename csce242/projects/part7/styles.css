@@ -513,6 +513,11 @@ button {
     cursor: pointer;
     border-radius: 5px;
 }
+
+#map {
+    width:100%;
+    height:300px;
+}
 <!--notifications-->
 .notifications-container {
     background: white;
