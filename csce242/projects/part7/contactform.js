@@ -8,6 +8,7 @@ document.getElementById("contact-form").addEventListener("submit", async functio
     try {
         let response = await fetch(form.action, {
             method: "POST",
+            mode: "no-cors",
             body: formData
         });
 
