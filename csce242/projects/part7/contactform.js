@@ -1,32 +1,39 @@
-document.getElementById("contact-form").addEventListener("submit", async function(event) {
-    event.preventDefault();
-    
-    const form = event.target;
-    const formData = new FormData(form);
-    const resultMessage = document.getElementById("result");
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleMenu = () => {
+        document.getElementById("nav-items").classList.toggle("hidden");
+    };
 
-    try {
-        let response = await fetch(form.action, {
-            method: "POST",
-            mode: "no-cors",
-            body: formData
-        });
+    document.getElementById("toggle-nav").onclick = toggleMenu;
 
-        if (response.ok) {
-            resultMessage.textContent = "Your message has been sent successfully!";
-            resultMessage.style.color = "green";
-            resultMessage.style.fontWeight = "bold";
-            resultMessage.style.marginTop = "10px";
-            resultMessage.style.display = "block";
-            form.reset();
-        } else {
-            throw new Error("Something went wrong. Please try again.");
+    const form = document.getElementById("contactForm");
+    const responseMessage = document.getElementById("responseMessage");
+
+    form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        formData.append("access_key", "817cffc5-dfd0-4c25-8906-e6530a0c8308");
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData,
+            });
+
+            const result = await response.json();
+
+            if (response.ok && result.success) {
+                responseMessage.textContent = "Your message has been sent successfully!";
+                responseMessage.className = "message success";
+                responseMessage.style.display = "block";
+                form.reset();
+            } else {
+                throw new Error(result.message || "Something went wrong. Please try again.");
+            }
+        } catch (error) {
+            responseMessage.textContent = error.message;
+            responseMessage.className = "message error";
+            responseMessage.style.display = "block";
         }
-    } catch (error) {
-        resultMessage.textContent = error.message;
-        resultMessage.style.color = "red";
-        resultMessage.style.fontWeight = "bold";
-        resultMessage.style.marginTop = "10px";
-        resultMessage.style.display = "block";
-    }
+    });
 });
