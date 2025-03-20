@@ -1,12 +1,5 @@
-
-window.onload = function () {
     const form = document.getElementById("contactForm");
     const result = document.getElementById("responseMessage");
-
-    if (!form || !result) {
-        console.error("Form or responseMessage element not found.");
-        return;
-    }
 
     form.addEventListener("submit", async function (e) {
         e.preventDefault();
@@ -49,4 +42,3 @@ window.onload = function () {
             }, 5000);
         }
     });
-};
