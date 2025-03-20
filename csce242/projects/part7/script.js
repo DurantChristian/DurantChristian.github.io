@@ -7,14 +7,9 @@ const getReviews = async () => {
 
     try {
         const response = await fetch(url);
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-
         return await response.json();
-    } catch (error) {
-        console.error("Error fetching reviews:", error.message);
+    } catch(error) {
+        console.log(error);
     }
 };
 
