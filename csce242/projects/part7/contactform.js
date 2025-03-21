@@ -1,4 +1,4 @@
-const showEmailResult = async (e) => {
+const EmailResult = async (e) => {
     e.preventDefault(); 
 
     const result = document.getElementById("result");
@@ -46,4 +46,4 @@ const getEmailResult = async () => {
         return null;
     }
 };
-document.getElementById("contact-form").onsubmit = showEmailResult;
+document.getElementById("contact-form").onsubmit = EmailResult;
