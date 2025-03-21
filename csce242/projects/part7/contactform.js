@@ -7,7 +7,6 @@ const EmailResult = async (e) => {
     if (!form.checkValidity()) {
         result.innerHTML = "Sorry, your email couldn't be sent. Please fill in all required fields.";
         result.style.color = "red";
-        return;
     }
 
     result.innerHTML = "Please wait....";
