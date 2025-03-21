@@ -4,9 +4,17 @@ const EmailResult = async (e) => {
     const result = document.getElementById("result");
     const form = document.getElementById("contact-form");
 
-    if (!form.checkValidity()) {
-        result.innerHTML = "Sorry, your email couldn't be sent. Please fill in all required fields.";
+    let missingFields = [];
+    if (!object.name) missingFields.push("Name");
+    if (!object.email) missingFields.push("Email");
+    if (!object.contact-method) missingFields.push("Contact-method");
+    if (!object.subject) missingFields.push("Subject");
+    if (!object.message) missingFields.push("Message");
+
+    if (missingFields.length > 0) {
+        result.innerHTML = `Sorry, your email couldn't be sent. Please fill in the following fields: ${missingFields.join(", ")}`;
         result.style.color = "red";
+        return; 
     }
 
     result.innerHTML = "Please wait....";
