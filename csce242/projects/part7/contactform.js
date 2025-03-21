@@ -1,39 +1,34 @@
 const EmailResult = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); 
 
     const result = document.getElementById("result");
-    const form = document.getElementById("contact-form");
+    result.innerHTML = "Please wait...."; 
 
-    let missingFields = [];
-    if (!object.name) missingFields.push("Name");
-    if (!object.email) missingFields.push("Email");
-    if (!object.contact-method) missingFields.push("Contact-method");
-    if (!object.subject) missingFields.push("Subject");
-    if (!object.message) missingFields.push("Message");
-
-    if (missingFields.length > 0) {
-        result.innerHTML = `Sorry, your email couldn't be sent. Please fill in the following fields: ${missingFields.join(", ")}`;
-        result.style.color = "red";
-        return; 
-    }
-
-    result.innerHTML = "Please wait....";
     let response = await getEmailResult();
 
     if (response && response.status == 200) {
         result.innerHTML = "Email successfully sent!";
+        result.classList.add("success");
     } else {
-        result.innerHTML = "Sorry, your email couldn't be sent.";
+        result.innerHTML = "Sorry, your email was not sent.";
+        result.classList.add("error");
     }
+
+    setTimeout(() => {
+        result.innerHTML = "";
+    }, 5000);
 };
 
 const getEmailResult = async () => {
     const form = document.getElementById("contact-form");
     const formData = new FormData(form);
     const object = Object.fromEntries(formData);
-    object.access_key = "817cffc5-dfd0-4c25-8906-e6530a0c8308"; 
-    const json = JSON.stringify(object);
     
+    object.access_key = "817cffc5-dfd0-4c25-8906-e6530a0c8308";
+
+    const json = JSON.stringify(object);
+    const result = document.getElementById("result");
+
     try {
         const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
@@ -46,9 +41,9 @@ const getEmailResult = async () => {
 
         return response;
     } catch (error) {
-        console.log(error);
+        console.error(error);
+        result.innerHTML = "Sorry, your email couldn't be sent.";
         return null;
     }
 };
-
 document.getElementById("contact-form").onsubmit = EmailResult;
