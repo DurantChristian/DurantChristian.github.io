@@ -135,30 +135,6 @@ h2 {
     transform:scale(1.1);
 }
 
-.project-links {
-    margin-top: 15px;
-    font-size: 0.95rem;
-  }
-  
-  .project-links p {
-    margin: 0;
-    line-height: 1.6;
-  }
-  
-  .project-links a {
-    color: #0077cc;
-    text-decoration: none;
-  }
-  
-  .project-links a:hover {
-    text-decoration: underline;
-    color: #005fa3;
-  }
-  
-  .project-links strong {
-    color: #222;
-  }
-
 @media (max-width: 768px) {
     .assignments, .projects {
         flex-direction: row;  
